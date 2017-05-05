@@ -1,0 +1,72 @@
+Removed Pin From Net: NetName=GND Pin=S1-1
+Removed Pin From Net: NetName=S2 Pin=S2-2
+Removed Pin From Net: NetName=GND Pin=U33-2
+Removed Pin From Net: NetName=V3.3 Pin=U33-3
+Removed Member From Class: ClassName=design_cty Member=U33
+Change Component DesignItemId : Designator=S1 Old DesignItemId=SW-PB New DesignItemId=K1
+Change Component DesignItemId : Designator=S2 Old DesignItemId=SW-PB New DesignItemId=K1
+Change Component Footprint: Designator=R21 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R22 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R23 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R24 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R25 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R26 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R27 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R28 Old Footprint=AXIAL-0.3 New Footprint=0805
+Change Component Footprint: Designator=R1 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R2 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R3 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R4 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R5 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R6 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R7 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R8 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R9 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R10 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R11 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R12 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R13 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R14 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R16 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R17 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R18 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R19 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R20 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R29 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R30 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=R31 Old Footprint=AXIAL-0.4 New Footprint=0805
+Change Component Footprint: Designator=C1 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C2 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C3 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C4 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C7 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C8 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C9 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C10 Old Footprint=RAD-0.3 New Footprint=0805
+Change Component Footprint: Designator=C5 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C6 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C11 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C12 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C13 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C14 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=C15 Old Footprint=RAD-0.3 New Footprint=1206
+Change Component Footprint: Designator=S1 Old Footprint=SPST-2 New Footprint=KEY1
+Change Component Footprint: Designator=S2 Old Footprint=SPST-2 New Footprint=KEY1
+Change Component Comment : Designator=S1 Old Comment=SW-PB New Comment=K1
+Change Component Comment : Designator=S2 Old Comment=SW-PB New Comment=K1
+Added Component: Designator=ASM1117(SOT223)
+Added Pin To Net: NetName=GND Pin=ASM1117-1
+Added Pin To Net: NetName=V3.3 Pin=ASM1117-3
+Added Pin To Net: NetName=NetC9_2 Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-3
+Added Pin To Net: NetName=GND Pin=S1-4
+Added Pin To Net: NetName=GND Pin=S2-2
+Added Pin To Net: NetName=S2 Pin=S2-3
+Added Pin To Net: NetName=S2 Pin=S2-4
+Added Pin To Net: NetName=NetASM1117_2 Pin=ASM1117-2
+Added Pin To Net: NetName=NetASM1117_2 Pin=C11-2
+Added Pin To Net: NetName=NetASM1117_2 Pin=S3-2
+Added Net: Name=NetASM1117_2
+Added Member To Class: ClassName=design_cty Member=Component ASM1117 LM117K
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

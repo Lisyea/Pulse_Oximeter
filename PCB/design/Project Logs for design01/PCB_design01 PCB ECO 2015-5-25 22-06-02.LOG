@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=NetS3_2 Pin=S3-2
+Added Pin To Net: NetName=NetS3_2 Pin=S3-5
+Added Net: Name=NetS3_2
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

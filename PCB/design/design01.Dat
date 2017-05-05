@@ -1,0 +1,21 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~design01.PrjPcb|ReportField=ProjectFullPath~C:\Users\Chentianyang\Desktop\design\design01.PrjPcb|ReportField=Title~Bill of Materials For Project [design01.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~70|ReportField=ReportTime~11:00:02|ReportField=ReportDate~2015/5/27|ReportField=ReportDateTime~2015/5/27 11:00:02|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~|ReportField=CurrentTime~|ReportField=Date~|ReportField=DocumentFullPathAndName~|ReportField=DocumentName~|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~|ReportField=Organization~|ReportField=ProjectName~|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~design01.PrjPcb|ReportField=DataSourceFullPath~C:\Users\Chentianyang\Desktop\design\design01.PrjPcb
+LM117K||ASM1117|SOT223|LM117K|1
+Cap|Capacitor|C1, C2, C3, C4, C5, C6, C7, C8, C9, C10|0805|Cap|10
+Cap|Capacitor|C11, C12, C13, C14, C15|1206|Cap|5
+LED2|Typical RED, GREEN, YELLOW, AMBER GaAs LED|D1, D2, D3, D4|3.2X1.6X1.1|LED2|4
+Dpy Red-CC|7.62 mm Black Surface HER 7-Segment Display: CC, RH DP|DS1, DS2, DS3, DS4|LTS547R|Dpy Red-CC|4
+D Connector 9|Receptacle Assembly, 9 Position, Right Angle|J1|DSUB1.385-2H9|D Connector 9|1
+Header 5X2|Header, 5-Pin, Dual row|JTAG|HDR2X5|Header 5X2|1
+C8051F310||MCU|LQFP-32|C8051F310/2/4_361/4/6/8|1
+Header 2|Header, 2-Pin|P72|HDR1X2|Header 2|1
+QNPN|NPN Bipolar Transistor|Q1, Q2|SOT-23B_N|QNPN|2
+Res2|Resistor|R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R16, R17, R18, R19, R20, R29, R30, R31|0805|Res2|22
+Res1|Resistor|R21, R22, R23, R24, R25, R26, R27, R28|0805|Res1|8
+RPot|Potentiometer|RN1, RN2|VR5|RPot|2
+K1||S1, S2|KEY1|K1|2
+SW-DPDT|Double-Pole, Double-Throw Switch|S3|DPDT-6|SW-DPDT|1
+OP-07||U01|DIP-8|OP-07|1
+TLC2274||U02|SOP-14N|LM324|1
+SN74HC573N|Octal D-Type Transparent Latch with 3-State Outputs|U573|N020D|SN74HC573N|1
+ULN2003A||U2003|DIP16|ULN2003A|1
+TC7662ACPA|Super Charge Pump DC-to-DC Voltage Converter, 12kHz, 8-Pin PDIP, Commercial Temperature|U-33|SO-8|TC7662ACPA|1

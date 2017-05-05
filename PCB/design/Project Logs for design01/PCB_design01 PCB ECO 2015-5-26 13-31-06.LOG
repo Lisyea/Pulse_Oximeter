@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=D0 Pin=R21-1
+Removed Pin From Net: NetName=D1 Pin=R22-1
+Removed Pin From Net: NetName=D2 Pin=R23-1
+Removed Pin From Net: NetName=D3 Pin=R24-1
+Removed Pin From Net: NetName=D4 Pin=R25-1
+Removed Pin From Net: NetName=D5 Pin=R26-1
+Removed Pin From Net: NetName=D6 Pin=R27-1
+Removed Pin From Net: NetName=D7 Pin=R28-1
+Change Component Designator: OldDesignator=U01 NewDesignator=U2003
+Added Component: Designator=U573(N020D)
+Added Pin To Net: NetName=GND Pin=U573-1
+Added Pin To Net: NetName=D0 Pin=U573-2
+Added Pin To Net: NetName=D1 Pin=U573-3
+Added Pin To Net: NetName=D2 Pin=U573-4
+Added Pin To Net: NetName=D3 Pin=U573-5
+Added Pin To Net: NetName=D4 Pin=U573-6
+Added Pin To Net: NetName=D5 Pin=U573-7
+Added Pin To Net: NetName=D6 Pin=U573-8
+Added Pin To Net: NetName=D7 Pin=U573-9
+Added Pin To Net: NetName=GND Pin=U573-10
+Added Pin To Net: NetName=V3.3 Pin=U573-20
+Added Pin To Net: NetName=A Pin=R21-1
+Added Pin To Net: NetName=A Pin=U573-19
+Added Net: Name=A
+Added Pin To Net: NetName=B Pin=R22-1
+Added Pin To Net: NetName=B Pin=U573-18
+Added Net: Name=B
+Added Pin To Net: NetName=C Pin=R23-1
+Added Pin To Net: NetName=C Pin=U573-17
+Added Net: Name=C
+Added Pin To Net: NetName=D Pin=R24-1
+Added Pin To Net: NetName=D Pin=U573-16
+Added Net: Name=D
+Added Pin To Net: NetName=E Pin=R25-1
+Added Pin To Net: NetName=E Pin=U573-15
+Added Net: Name=E
+Added Pin To Net: NetName=F Pin=R26-1
+Added Pin To Net: NetName=F Pin=U573-14
+Added Net: Name=F
+Added Pin To Net: NetName=G Pin=R27-1
+Added Pin To Net: NetName=G Pin=U573-13
+Added Net: Name=G
+Added Pin To Net: NetName=H Pin=R28-1
+Added Pin To Net: NetName=H Pin=U573-12
+Added Net: Name=H
+Added Pin To Net: NetName=P2.2 Pin=MCU-16
+Added Pin To Net: NetName=P2.2 Pin=U573-11
+Added Net: Name=P2.2
+Added Member To Class: ClassName=Sheet2 Member=Component U573 SN74HC573N
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

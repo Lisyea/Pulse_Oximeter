@@ -1,0 +1,105 @@
+Removed Pin From Net: NetName=GND Pin=ASM1117-1
+Removed Pin From Net: NetName=V3.3 Pin=ASM1117-3
+Removed Pin From Net: NetName=VOUT0 Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-7
+Removed Pin From Net: NetName=GND Pin=J1-9
+Removed Pin From Net: NetName=DC Pin=MCU-9
+Removed Pin From Net: NetName=V3.3 Pin=Q1-1
+Removed Pin From Net: NetName=V3.3 Pin=Q2-1
+Removed Pin From Net: NetName=LED_RED Pin=R11-1
+Removed Pin From Net: NetName=LED_INFRARED Pin=R12-2
+Removed Pin From Net: NetName=A Pin=R21-1
+Removed Pin From Net: NetName=B Pin=R22-1
+Removed Pin From Net: NetName=C Pin=R23-1
+Removed Pin From Net: NetName=D Pin=R24-1
+Removed Pin From Net: NetName=E Pin=R25-1
+Removed Pin From Net: NetName=F Pin=R26-1
+Removed Pin From Net: NetName=G Pin=R27-1
+Removed Pin From Net: NetName=H Pin=R28-1
+Removed Pin From Net: NetName=GND Pin=U2003-8
+Removed Pin From Net: NetName=V3.3 Pin=U2003-9
+Removed Member From Class: ClassName=design_cty Member=ASM1117
+Removed Member From Class: ClassName=Sheet2 Member=DS1
+Removed Member From Class: ClassName=Sheet2 Member=DS2
+Removed Member From Class: ClassName=Sheet2 Member=DS3
+Removed Member From Class: ClassName=Sheet2 Member=DS4
+Removed Member From Class: ClassName=design_cty Member=Q1
+Removed Member From Class: ClassName=design_cty Member=Q2
+Removed Member From Class: ClassName=design_cty Member=R11
+Removed Member From Class: ClassName=design_cty Member=R12
+Removed Member From Class: ClassName=Sheet2 Member=R21
+Removed Member From Class: ClassName=Sheet2 Member=R22
+Removed Member From Class: ClassName=Sheet2 Member=R23
+Removed Member From Class: ClassName=Sheet2 Member=R24
+Removed Member From Class: ClassName=Sheet2 Member=R25
+Removed Member From Class: ClassName=Sheet2 Member=R26
+Removed Member From Class: ClassName=Sheet2 Member=R27
+Removed Member From Class: ClassName=Sheet2 Member=R28
+Removed Member From Class: ClassName=Sheet2 Member=U2003
+Change Component Footprint: Designator=D1 Old Footprint=3.2X1.6X1.1 New Footprint=0805
+Change Component Footprint: Designator=D2 Old Footprint=3.2X1.6X1.1 New Footprint=0805
+Change Component Footprint: Designator=D3 Old Footprint=3.2X1.6X1.1 New Footprint=0805
+Change Component Footprint: Designator=D4 Old Footprint=3.2X1.6X1.1 New Footprint=0805
+Added Component: Designator=asm(SOT-223)
+Added Component: Designator=DPY-4CK(DYP-4BIT)
+Added Component: Designator=U573-2(N020D)
+Added Pin To Net: NetName=GND Pin=asm-1
+Added Pin To Net: NetName=V3.3 Pin=asm-2
+Added Pin To Net: NetName=E Pin=DPY-4CK-1
+Added Pin To Net: NetName=D Pin=DPY-4CK-2
+Added Pin To Net: NetName=H Pin=DPY-4CK-3
+Added Pin To Net: NetName=C Pin=DPY-4CK-4
+Added Pin To Net: NetName=G Pin=DPY-4CK-5
+Added Pin To Net: NetName=B Pin=DPY-4CK-7
+Added Pin To Net: NetName=F Pin=DPY-4CK-10
+Added Pin To Net: NetName=A Pin=DPY-4CK-11
+Added Pin To Net: NetName=VOUT0 Pin=J1-1
+Added Pin To Net: NetName=LED_RED Pin=J1-3
+Added Pin To Net: NetName=LED_INFRARED Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J1-8
+Added Pin To Net: NetName=NetC2_2 Pin=MCU-9
+Added Pin To Net: NetName=LED_RED Pin=R13-1
+Added Pin To Net: NetName=V3.3 Pin=R13-2
+Added Pin To Net: NetName=LED_INFRARED Pin=R14-1
+Added Pin To Net: NetName=V3.3 Pin=R14-2
+Added Pin To Net: NetName=GND Pin=U573-2-1
+Added Pin To Net: NetName=D0 Pin=U573-2-2
+Added Pin To Net: NetName=D1 Pin=U573-2-3
+Added Pin To Net: NetName=D2 Pin=U573-2-4
+Added Pin To Net: NetName=D3 Pin=U573-2-5
+Added Pin To Net: NetName=D4 Pin=U573-2-6
+Added Pin To Net: NetName=D5 Pin=U573-2-7
+Added Pin To Net: NetName=D6 Pin=U573-2-8
+Added Pin To Net: NetName=D7 Pin=U573-2-9
+Added Pin To Net: NetName=GND Pin=U573-2-10
+Added Pin To Net: NetName=V3.3 Pin=U573-2-20
+Change Net Name : Old Net Name=DC New Net Name=NetR6_2
+Change Net Name : Old Net Name=NetC2_2 New Net Name=DC
+Added Pin To Net: NetName=Netasm_3 Pin=asm-3
+Added Pin To Net: NetName=Netasm_3 Pin=C11-2
+Added Pin To Net: NetName=Netasm_3 Pin=S3-4
+Added Net: Name=Netasm_3
+Added Pin To Net: NetName=P2.0 Pin=MCU-18
+Added Pin To Net: NetName=P2.0 Pin=U573-11
+Added Net: Name=P2.0
+Added Pin To Net: NetName=P2.1 Pin=MCU-17
+Added Pin To Net: NetName=P2.1 Pin=U573-2-11
+Added Net: Name=P2.1
+Added Pin To Net: NetName=WE1 Pin=DPY-4CK-12
+Added Pin To Net: NetName=WE1 Pin=U573-2-19
+Added Net: Name=WE1
+Added Pin To Net: NetName=WE2 Pin=DPY-4CK-9
+Added Pin To Net: NetName=WE2 Pin=U573-2-18
+Added Net: Name=WE2
+Added Pin To Net: NetName=WE3 Pin=DPY-4CK-8
+Added Pin To Net: NetName=WE3 Pin=U573-2-17
+Added Net: Name=WE3
+Added Pin To Net: NetName=WE4 Pin=DPY-4CK-6
+Added Pin To Net: NetName=WE4 Pin=U573-2-16
+Added Net: Name=WE4
+Added Member To Class: ClassName=design_cty Member=Component asm ASM1117
+Added Member To Class: ClassName=Sheet2 Member=Component DPY-4CK
+Added Member To Class: ClassName=Sheet2 Member=Component U573-2 SN74HC573N
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

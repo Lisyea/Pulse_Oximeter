@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=design_cty Member=U2003
+Change Component Footprint: Designator=DS1 Old Footprint=A New Footprint=LTS547R
+Change Component Footprint: Designator=DS2 Old Footprint=A New Footprint=LTS547R
+Change Component Footprint: Designator=DS3 Old Footprint=A New Footprint=LTS547R
+Change Component Footprint: Designator=DS4 Old Footprint=A New Footprint=LTS547R
+Added Member To Class: ClassName=design_cty Member=Component U01 OP-07
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetASM1117_2 Pin=S3-2
+Change Component DesignItemId : Designator=S3 Old DesignItemId=SW-SPST New DesignItemId=SW-DPDT
+Change Component Footprint: Designator=U02 Old Footprint=DIP-14 New Footprint=SOP-14N
+Change Component Footprint: Designator=U-33 Old Footprint=PDIP300-PA8 New Footprint=SO-8
+Change Component Footprint: Designator=S3 Old Footprint=SPST-2 New Footprint=DPDT-6
+Change Component Comment : Designator=S3 Old Comment=SW-SPST New Comment=SW-DPDT
+Added Pin To Net: NetName=NetASM1117_2 Pin=S3-3
+Added Pin To Net: NetName=NetASM1117_2 Pin=S3-6
+Added Pin To Net: NetName=NetP72_2 Pin=P72-2
+Added Pin To Net: NetName=NetP72_2 Pin=S3-1
+Added Pin To Net: NetName=NetP72_2 Pin=S3-4
+Added Net: Name=NetP72_2
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

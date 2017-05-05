@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=C5 Old Footprint=1206 New Footprint=0805
+Change Component Footprint: Designator=C6 Old Footprint=1206 New Footprint=0805
+Added Pin To Net: NetName=NetASM1117_2 Pin=C11-2
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

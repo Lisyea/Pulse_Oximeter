@@ -1,0 +1,128 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Chentianyang\Desktop\design\PCB_design01.PcbDoc
+Date     : 2015/6/8
+Time     : 14:29:32
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint (3.26mm > 2.54mm) : Pad J1-10(58.371mm,42.901mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.26mm > 2.54mm) : Pad J1-11(83.361mm,42.901mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.3mm > 2.54mm) : Pad Free-3(57.912mm,121.031mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.3mm > 2.54mm) : Pad Free-2(57.658mm,30.353mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.3mm > 2.54mm) : Pad Free-1(150.876mm,29.845mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.3mm > 2.54mm) : Pad Free-0(151.003mm,121.539mm)  Multi-Layer
+Rule Violations :6
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Pad MCU-2(105.029mm,81.179mm)  Top Layer and 
+                     Pad MCU-1(105.029mm,80.379mm)  Top Layer
+   Violation between Pad MCU-3(105.029mm,81.979mm)  Top Layer and 
+                     Pad MCU-2(105.029mm,81.179mm)  Top Layer
+   Violation between Pad MCU-4(105.029mm,82.779mm)  Top Layer and 
+                     Pad MCU-3(105.029mm,81.979mm)  Top Layer
+   Violation between Pad MCU-5(105.029mm,83.579mm)  Top Layer and 
+                     Pad MCU-4(105.029mm,82.779mm)  Top Layer
+   Violation between Pad MCU-6(105.029mm,84.379mm)  Top Layer and 
+                     Pad MCU-5(105.029mm,83.579mm)  Top Layer
+   Violation between Pad MCU-7(105.029mm,85.179mm)  Top Layer and 
+                     Pad MCU-6(105.029mm,84.379mm)  Top Layer
+   Violation between Pad MCU-8(105.029mm,85.979mm)  Top Layer and 
+                     Pad MCU-7(105.029mm,85.179mm)  Top Layer
+   Violation between Pad MCU-10(102.429mm,87.779mm)  Top Layer and 
+                     Pad MCU-9(103.229mm,87.779mm)  Top Layer
+   Violation between Pad MCU-11(101.629mm,87.779mm)  Top Layer and 
+                     Pad MCU-10(102.429mm,87.779mm)  Top Layer
+   Violation between Pad MCU-12(100.829mm,87.779mm)  Top Layer and 
+                     Pad MCU-11(101.629mm,87.779mm)  Top Layer
+   Violation between Pad MCU-13(100.029mm,87.779mm)  Top Layer and 
+                     Pad MCU-12(100.829mm,87.779mm)  Top Layer
+   Violation between Pad MCU-14(99.229mm,87.779mm)  Top Layer and 
+                     Pad MCU-13(100.029mm,87.779mm)  Top Layer
+   Violation between Pad MCU-15(98.429mm,87.779mm)  Top Layer and 
+                     Pad MCU-14(99.229mm,87.779mm)  Top Layer
+   Violation between Pad MCU-16(97.629mm,87.779mm)  Top Layer and 
+                     Pad MCU-15(98.429mm,87.779mm)  Top Layer
+   Violation between Pad MCU-18(95.829mm,85.179mm)  Top Layer and 
+                     Pad MCU-17(95.829mm,85.979mm)  Top Layer
+   Violation between Pad MCU-19(95.829mm,84.379mm)  Top Layer and 
+                     Pad MCU-18(95.829mm,85.179mm)  Top Layer
+   Violation between Pad MCU-20(95.829mm,83.579mm)  Top Layer and 
+                     Pad MCU-19(95.829mm,84.379mm)  Top Layer
+   Violation between Pad MCU-21(95.829mm,82.779mm)  Top Layer and 
+                     Pad MCU-20(95.829mm,83.579mm)  Top Layer
+   Violation between Pad MCU-22(95.829mm,81.979mm)  Top Layer and 
+                     Pad MCU-21(95.829mm,82.779mm)  Top Layer
+   Violation between Pad MCU-23(95.829mm,81.179mm)  Top Layer and 
+                     Pad MCU-22(95.829mm,81.979mm)  Top Layer
+   Violation between Pad MCU-24(95.829mm,80.379mm)  Top Layer and 
+                     Pad MCU-23(95.829mm,81.179mm)  Top Layer
+   Violation between Pad MCU-26(98.429mm,78.579mm)  Top Layer and 
+                     Pad MCU-25(97.629mm,78.579mm)  Top Layer
+   Violation between Pad MCU-27(99.229mm,78.579mm)  Top Layer and 
+                     Pad MCU-26(98.429mm,78.579mm)  Top Layer
+   Violation between Pad MCU-28(100.029mm,78.579mm)  Top Layer and 
+                     Pad MCU-27(99.229mm,78.579mm)  Top Layer
+   Violation between Pad MCU-29(100.829mm,78.579mm)  Top Layer and 
+                     Pad MCU-28(100.029mm,78.579mm)  Top Layer
+   Violation between Pad MCU-30(101.629mm,78.579mm)  Top Layer and 
+                     Pad MCU-29(100.829mm,78.579mm)  Top Layer
+   Violation between Pad MCU-31(102.429mm,78.579mm)  Top Layer and 
+                     Pad MCU-30(101.629mm,78.579mm)  Top Layer
+   Violation between Pad MCU-32(103.229mm,78.579mm)  Top Layer and 
+                     Pad MCU-31(102.429mm,78.579mm)  Top Layer
+Rule Violations :28
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Track (142.913mm,82.042mm)(151.473mm,82.042mm)  Top Overlay and 
+                     Pad S3-1(149.733mm,83.312mm)  Multi-Layer
+   Violation between Track (142.913mm,89.662mm)(151.473mm,89.662mm)  Top Overlay and 
+                     Pad S3-3(149.733mm,88.392mm)  Multi-Layer
+   Violation between Track (142.913mm,82.042mm)(151.473mm,82.042mm)  Top Overlay and 
+                     Pad S3-6(144.653mm,83.312mm)  Multi-Layer
+   Violation between Track (142.913mm,89.662mm)(151.473mm,89.662mm)  Top Overlay and 
+                     Pad S3-4(144.653mm,88.392mm)  Multi-Layer
+Rule Violations :4
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Text "10" (139.7mm,43.053mm)  Top Overlay and 
+                     Track (139.446mm,39.751mm)(139.446mm,44.831mm)  Top Overlay
+   Violation between Text "9" (139.7mm,40.513mm)  Top Overlay and 
+                     Track (139.446mm,39.751mm)(139.446mm,44.831mm)  Top Overlay
+   Violation between Text "2" (125.476mm,43.053mm)  Top Overlay and 
+                     Track (126.746mm,39.751mm)(126.746mm,44.831mm)  Top Overlay
+   Violation between Text "1" (125.984mm,40.513mm)  Top Overlay and 
+                     Track (126.746mm,39.751mm)(126.746mm,44.831mm)  Top Overlay
+Rule Violations :4
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+
+Violations Detected : 42
+Time Elapsed        : 00:00:01

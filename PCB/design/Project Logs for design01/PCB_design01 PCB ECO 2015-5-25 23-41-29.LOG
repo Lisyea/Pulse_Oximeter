@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetASM1117_2 Pin=S3-5
+Removed Pin From Net: NetName=NetASM1117_2 Pin=S3-6
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

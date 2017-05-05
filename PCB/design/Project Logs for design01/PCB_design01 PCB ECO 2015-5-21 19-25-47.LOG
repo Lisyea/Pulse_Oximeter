@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=LED1 Pin=D1-1
+Removed Pin From Net: NetName=LED2 Pin=D2-1
+Removed Pin From Net: NetName=LED3 Pin=D3-1
+Removed Pin From Net: NetName=LED4 Pin=D4-1
+Removed Pin From Net: NetName=RED Pin=Q1-3
+Removed Pin From Net: NetName=INFRARED Pin=Q2-3
+Removed Pin From Net: NetName=GND Pin=R13-1
+Removed Pin From Net: NetName=RED Pin=R13-2
+Removed Pin From Net: NetName=GND Pin=R14-1
+Removed Pin From Net: NetName=INFRARED Pin=R14-2
+Added Pin To Net: NetName=NetC2_2 Pin=C5-1
+Added Pin To Net: NetName=LED1 Pin=D1-2
+Added Pin To Net: NetName=LED2 Pin=D2-2
+Added Pin To Net: NetName=LED3 Pin=D3-2
+Added Pin To Net: NetName=LED4 Pin=D4-2
+Added Pin To Net: NetName=RED Pin=R13-1
+Added Pin To Net: NetName=INFRARED Pin=R14-1
+Added Pin To Net: NetName=NetC2_2 Pin=U02-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R17-1
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R18-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R19-1
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=R20-1
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R13-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ2_3 Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_3 Pin=R14-2
+Added Net: Name=NetQ2_3
+Added Room: Name=design_cty
+Added Room: Name=Sheet2

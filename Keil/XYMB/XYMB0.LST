@@ -1,0 +1,1345 @@
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN XYMB0.OBJ
+ASSEMBLER INVOKED BY: F:\keil-2010\C51\BIN\A51.EXE XYMB0.asm NOMOD51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;------------------------------------
+                       2     ;-  Generated Initialization File  --
+                       3     ;------------------------------------            
+                       4     
+                       5     ;$include (c8051F310.inc) 
+                +1     6     ;---------------------------------------------------------------------------
+                +1     7     ;  
+                +1     8     ;  
+                +1     9     ;
+                +1    10     ;
+                +1    11     ;  FILE NAME   : C8051F310.INC
+                +1    12     ;  TARGET MCUs : C8051F310, 'F311
+                +1    13     ;  DESCRIPTION : Register/bit definitions for the C8051F31x product family.
+                +1    14     ;
+                +1    15     ;  REVISION 1.3
+                +1    16     ;     -- added ESPI0 and PSPI0
+                +1    17     ;  REVISION 1.2
+                +1    18     ;     -- added VDM0CN (0xff)   
+                +1    19     ;
+                +1    20     ;  REVISION 1.1
+                +1    21     ;     -- changed TARGET MCUs to 'F310, 'F311
+                +1    22     ;     -- SPICFG --> SPI0CFG
+                +1    23     ;     -- SPICKR --> SPI0CKR
+                +1    24     ;     -- SPIDAT --> SPI0DAT
+                +1    25     ;     -- removed CLKMUL (0xb9)
+                +1    26     ;     -- AMUX0N --> AMX0N
+                +1    27     ;     -- AMUX0P --> AMX0P
+                +1    28     ;
+                +1    29     ;---------------------------------------------------------------------------
+                +1    30     
+                +1    31     ; BYTE Registers 
+  0080          +1    32     P0       DATA  080H     ; PORT 0                                                   
+  0081          +1    33     SP       DATA  081H     ; STACK POINTER                                            
+  0082          +1    34     DPL      DATA  082H     ; DATA POINTER - LOW BYTE                                  
+  0083          +1    35     DPH      DATA  083H     ; DATA POINTER - HIGH BYTE                                 
+  0087          +1    36     PCON     DATA  087H     ; POWER CONTROL                                            
+  0088          +1    37     TCON     DATA  088H     ; TIMER CONTROL                                            
+  0089          +1    38     TMOD     DATA  089H     ; TIMER MODE                                               
+  008A          +1    39     TL0      DATA  08AH     ; TIMER 0 - LOW BYTE                                       
+  008B          +1    40     TL1      DATA  08BH     ; TIMER 1 - LOW BYTE                                       
+  008C          +1    41     TH0      DATA  08CH     ; TIMER 0 - HIGH BYTE                                      
+  008D          +1    42     TH1      DATA  08DH     ; TIMER 1 - HIGH BYTE                                      
+  008E          +1    43     CKCON    DATA  08EH     ; CLOCK CONTROL                                            
+  008F          +1    44     PSCTL    DATA  08FH     ; PROGRAM STORE R/W CONTROL                                
+  0090          +1    45     P1       DATA  090H     ; PORT 1                                                   
+  0091          +1    46     TMR3CN   DATA  091H     ; TIMER 3 CONTROL                                          
+  0092          +1    47     TMR3RLL  DATA  092H     ; TIMER 3 RELOAD LOW                                       
+  0093          +1    48     TMR3RLH  DATA  093H     ; TIMER 3 RELOAD HIGH                                      
+  0094          +1    49     TMR3L    DATA  094H     ; TIMER 3 LOW BYTE                                         
+  0095          +1    50     TMR3H    DATA  095H     ; TIMER 3 HIGH BYTE                                        
+  0098          +1    51     SCON0    DATA  098H     ; SERIAL PORT 0 CONTROL                                    
+  0099          +1    52     SBUF0    DATA  099H     ; SERIAL PORT 0 BUFFER                                     
+  009A          +1    53     CPT1CN   DATA  09AH     ; COMPARATOR 1 CONTROL                                     
+  009B          +1    54     CPT0CN   DATA  09BH     ; COMPARATOR 0 CONTROL                                     
+  009C          +1    55     CPT1MD   DATA  09CH     ; COMPARATOR 1 MODE                                        
+  009D          +1    56     CPT0MD   DATA  09DH     ; COMPARATOR 0 MODE                                        
+  009E          +1    57     CPT1MX   DATA  09EH     ; COMPARATOR 1 MUX                                         
+  009F          +1    58     CPT0MX   DATA  09FH     ; COMPARATOR 0 MUX                                         
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     2
+
+  00A0          +1    59     P2       DATA  0A0H     ; PORT 2                                                   
+  00A1          +1    60     SPI0CFG  DATA  0A1H     ; SPI0 CONFIGURATION                                        
+  00A2          +1    61     SPI0CKR  DATA  0A2H     ; SPI0 CLOCK CONFIGURATION                                  
+  00A3          +1    62     SPI0DAT  DATA  0A3H     ; SPI0 DATA                                         
+  00A4          +1    63     P0MDOUT  DATA  0A4H     ; PORT 0 OUTPUT MODE                                       
+  00A5          +1    64     P1MDOUT  DATA  0A5H     ; PORT 1 OUTPUT MODE                                       
+  00A6          +1    65     P2MDOUT  DATA  0A6H     ; PORT 2 OUTPUT MODE                                       
+  00A7          +1    66     P3MDOUT  DATA  0A7H     ; PORT 3 OUTPUT MODE                                       
+  00A8          +1    67     IE       DATA  0A8H     ; INTERRUPT ENABLE                                         
+  00A9          +1    68     CLKSEL   DATA  0A9H     ; CLOCK SOURCE SELECT                                      
+  00AA          +1    69     EMI0CN   DATA  0AAH     ; EXTERNAL MEMORY INTERFACE CONTROL                        
+  00B0          +1    70     P3       DATA  0B0H     ; PORT 3                                                   
+  00B1          +1    71     OSCXCN   DATA  0B1H     ; EXTERNAL OSCILLATOR CONTROL                              
+  00B2          +1    72     OSCICN   DATA  0B2H     ; INTERNAL OSCILLATOR CONTROL                              
+  00B3          +1    73     OSCICL   DATA  0B3H     ; INTERNAL OSCILLATOR CALIBRATION                          
+  00B5          +1    74     FLACL    DATA  0B5H     ; FLASH ACCESS LIMIT
+  00B6          +1    75     FLSCL    DATA  0B6H     ; FLASH SCALE                                              
+  00B7          +1    76     FLKEY    DATA  0B7H     ; FLASH LOCK & KEY                                         
+  00B8          +1    77     IP       DATA  0B8H     ; INTERRUPT PRIORITY   
+  00BA          +1    78     AMX0N    DATA  0BAH     ; ADC0 MUX NEGATIVE CHANNEL SELECTION                      
+  00BB          +1    79     AMX0P    DATA  0BBH     ; ADC0 MUX POSITIVE CHANNEL SELECTION                      
+  00BC          +1    80     ADC0CF   DATA  0BCH     ; ADC0 CONFIGURATION                                       
+  00BD          +1    81     ADC0L    DATA  0BDH     ; ADC0 DATA LOW                                            
+  00BE          +1    82     ADC0H    DATA  0BEH     ; ADC0 DATA HIGH                                           
+  00C0          +1    83     SMB0CN   DATA  0C0H     ; SMBUS CONTROL                                            
+  00C1          +1    84     SMB0CF   DATA  0C1H     ; SMBUS CONFIGURATION                                      
+  00C2          +1    85     SMB0DAT  DATA  0C2H     ; SMBUS DATA                                             
+  00C3          +1    86     ADC0GTL  DATA  0C3H     ; ADC0 GREATER-THAN LOW                                    
+  00C4          +1    87     ADC0GTH  DATA  0C4H     ; ADC0 GREATER-THAN HIGH                                   
+  00C5          +1    88     ADC0LTL  DATA  0C5H     ; ADC0 LESS-THAN LOW                                       
+  00C6          +1    89     ADC0LTH  DATA  0C6H     ; ADC0 LESS-THAN HIGH                                      
+  00C8          +1    90     TMR2CN   DATA  0C8H     ; TIMER 2 CONTROL                                                
+  00CA          +1    91     TMR2RLL  DATA  0CAH     ; TIMER 2 RELOAD LOW                                       
+  00CB          +1    92     TMR2RLH  DATA  0CBH     ; TIMER 2 RELOAD HIGH                                      
+  00CC          +1    93     TMR2L    DATA  0CCH     ; TIMER 2 LOW BYTE                                         
+  00CD          +1    94     TMR2H    DATA  0CDH     ; TIMER 2 HIGH BYTE                                        
+  00D0          +1    95     PSW      DATA  0D0H     ; PROGRAM STATUS WORD                                      
+  00D1          +1    96     REF0CN   DATA  0D1H     ; VOLTAGE REFERENCE 0 CONTROL                              
+  00D4          +1    97     P0SKIP   DATA  0D4H     ; PORT 0 CROSSBAR SKIP                                     
+  00D5          +1    98     P1SKIP   DATA  0D5H     ; PORT 1 CROSSBAR SKIP                                     
+  00D6          +1    99     P2SKIP   DATA  0D6H     ; PORT 2 CROSSBAR SKIP     
+  00D8          +1   100     PCA0CN   DATA  0D8H     ; PCA0 CONTROL                                             
+  00D9          +1   101     PCA0MD   DATA  0D9H     ; PCA0 MODE                                                
+  00DA          +1   102     PCA0CPM0 DATA  0DAH     ; PCA0 MODULE 0 MODE                                       
+  00DB          +1   103     PCA0CPM1 DATA  0DBH     ; PCA0 MODULE 1 MODE                                       
+  00DC          +1   104     PCA0CPM2 DATA  0DCH     ; PCA0 MODULE 2 MODE     
+  00DD          +1   105     PCA0CPM3 DATA  0DDH     ; PCA0 MODULE 3 MODE                                       
+  00DE          +1   106     PCA0CPM4 DATA  0DEH     ; PCA0 MODULE 4 MODE                                    
+  00E0          +1   107     ACC      DATA  0E0H     ; ACCUMULATOR                                              
+  00E1          +1   108     XBR0     DATA  0E1H     ; DIGITAL CROSSBAR CONFIGURATION REGISTER 0                
+  00E2          +1   109     XBR1     DATA  0E2H     ; DIGITAL CROSSBAR CONFIGURATION REGISTER 1                
+  00E4          +1   110     IT01CF   DATA  0E4H     ; INT0/INT1 CONFIGURATION                                  
+  00E6          +1   111     EIE1     DATA  0E6H     ; EXTERNAL INTERRUPT ENABLE 1                     
+  00E8          +1   112     ADC0CN   DATA  0E8H     ; ADC 0 CONTROL                                            
+  00E9          +1   113     PCA0CPL1 DATA  0E9H     ; PCA0 MODULE 1 CAPTURE/COMPARE REGISTER LOW BYTE          
+  00EA          +1   114     PCA0CPH1 DATA  0EAH     ; PCA0 MODULE 1 CAPTURE/COMPARE REGISTER HIGH BYTE         
+  00EB          +1   115     PCA0CPL2 DATA  0EBH     ; PCA0 MODULE 2 CAPTURE/COMPARE REGISTER LOW BYTE          
+  00EC          +1   116     PCA0CPH2 DATA  0ECH     ; PCA0 MODULE 2 CAPTURE/COMPARE REGISTER HIGH BYTE         
+  00ED          +1   117     PCA0CPL3 DATA  0EDH     ; PCA0 MODULE 3 CAPTURE/COMPARE REGISTER LOW BYTE          
+  00EE          +1   118     PCA0CPH3 DATA  0EEH     ; PCA0 MODULE 3 CAPTURE/COMPARE REGISTER HIGH BYTE         
+  00EF          +1   119     RSTSRC   DATA  0EFH     ; RESET SOURCE                                             
+  00F0          +1   120     B        DATA  0F0H     ; B REGISTER                                               
+  00F1          +1   121     P0MDIN   DATA  0F1H     ; PORT 0 INPUT MODE REGISTER                               
+  00F2          +1   122     P1MDIN   DATA  0F2H     ; PORT 1 INPUT MODE REGISTER                               
+  00F3          +1   123     P2MDIN   DATA  0F3H     ; PORT 2 INPUT MODE REGISTER                               
+  00F4          +1   124     P3MDIN   DATA  0F4H     ; PORT 3 INPUT MODE REGISTER                               
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     3
+
+  00F6          +1   125     EIP1     DATA  0F6H     ; EXTERNAL INTERRUPT PRIORITY 1
+  00F8          +1   126     SPI0CN   DATA  0F8H     ; SPI0 CONTROL                                             
+  00F9          +1   127     PCA0L    DATA  0F9H     ; PCA0 COUNTER REGISTER LOW BYTE                           
+  00FA          +1   128     PCA0H    DATA  0FAH     ; PCA0 COUNTER REGISTER HIGH BYTE                          
+  00FB          +1   129     PCA0CPL0 DATA  0FBH     ; PCA MODULE 0 CAPTURE/COMPARE REGISTER LOW BYTE           
+  00FC          +1   130     PCA0CPH0 DATA  0FCH     ; PCA MODULE 0 CAPTURE/COMPARE REGISTER HIGH BYTE          
+  00FD          +1   131     PCA0CPL4 DATA  0FDH     ; PCA MODULE 4 CAPTURE/COMPARE REGISTER LOW BYTE           
+  00FE          +1   132     PCA0CPH4 DATA  0FEH     ; PCA MODULE 4 CAPTURE/COMPARE REGISTER HIGH BYTE      
+  00FF          +1   133     VDM0CN    DATA  0FFH ; VDD MONITOR CONTROL
+                +1   134     
+                +1   135     ;------------------------------------------------------------------------------
+                +1   136     ;BIT DEFINITIONS
+                +1   137     ;
+                +1   138     ; TCON 88H
+  0088          +1   139     IT0      BIT   TCON.0   ; EXT. INTERRUPT 0 TYPE
+  0089          +1   140     IE0      BIT   TCON.1   ; EXT. INTERRUPT 0 EDGE FLAG
+  008A          +1   141     IT1      BIT   TCON.2   ; EXT. INTERRUPT 1 TYPE
+  008B          +1   142     IE1      BIT   TCON.3   ; EXT. INTERRUPT 1 EDGE FLAG
+  008C          +1   143     TR0      BIT   TCON.4   ; TIMER 0 ON/OFF CONTROL
+  008D          +1   144     TF0      BIT   TCON.5   ; TIMER 0 OVERFLOW FLAG
+  008E          +1   145     TR1      BIT   TCON.6   ; TIMER 1 ON/OFF CONTROL
+  008F          +1   146     TF1      BIT   TCON.7   ; TIMER 1 OVERFLOW FLAG
+                +1   147     
+                +1   148     ; SCON0  0x98 
+  0098          +1   149     RI0      BIT   SCON0.0  ; RECEIVE INTERRUPT FLAG                                
+  0099          +1   150     TI0      BIT   SCON0.1  ; TRANSMIT INTERRUPT FLAG                               
+  009A          +1   151     RB80     BIT   SCON0.2  ; RECEIVE BIT 8                                         
+  009B          +1   152     TB80     BIT   SCON0.3  ; TRANSMIT BIT 8                                        
+  009C          +1   153     REN0     BIT   SCON0.4  ; RECEIVE ENABLE                                        
+  009D          +1   154     MCE0     BIT   SCON0.5  ; MULTIPROCESSOR COMMUNICATION ENABLE                   
+  009F          +1   155     S0MODE   BIT   SCON0.7  ; SERIAL MODE CONTROL BIT 0                             
+                +1   156     
+                +1   157     ; IE  0xA8 
+  00A8          +1   158     EX0      BIT   IE.0     ; EXTERNAL INTERRUPT 0 ENABLE                           
+  00A9          +1   159     ET0      BIT   IE.1     ; TIMER 0 INTERRUPT ENABLE                              
+  00AA          +1   160     EX1      BIT   IE.2     ; EXTERNAL INTERRUPT 1 ENABLE                           
+  00AB          +1   161     ET1      BIT   IE.3     ; TIMER 1 INTERRUPT ENABLE                              
+  00AC          +1   162     ES0      BIT   IE.4     ; UART0 INTERRUPT ENABLE                                
+  00AD          +1   163     ET2      BIT   IE.5     ; TIMER 2 INTERRUPT ENABLE                              
+  00AE          +1   164     ESPI0    BIT   IE.6     ; SPI0 INTERRUPT ENABLE
+  00AF          +1   165     EA       BIT   IE.7     ; GLOBAL INTERRUPT ENABLE                               
+                +1   166     
+                +1   167     ; IP  0xB8 
+  00B8          +1   168     PX0      BIT   IP.0     ; EXTERNAL INTERRUPT 0 PRIORITY                         
+  00B9          +1   169     PT0      BIT   IP.1     ; TIMER 0 PRIORITY                                      
+  00BA          +1   170     PX1      BIT   IP.2     ; EXTERNAL INTERRUPT 1 PRIORITY                         
+  00BB          +1   171     PT1      BIT   IP.3     ; TIMER 1 PRIORITY                                      
+  00BC          +1   172     PS0      BIT   IP.4     ; UART0 PRIORITY                                        
+  00BD          +1   173     PT2      BIT   IP.5     ; TIMER 2 PRIORITY                                      
+  00BE          +1   174     PSPI0    BIT   IP.6     ; SPI0 INTERRUPT PRIORITY
+                +1   175     
+                +1   176     ; SMB0CN 0xC0 
+  00C0          +1   177     SI       BIT   SMB0CN.0 ; SMBUS0 INTERRUPT FLAG                                 
+  00C1          +1   178     ACK      BIT   SMB0CN.1 ; ACKNOWLEDGE FLAG                                      
+  00C2          +1   179     ARBLOST  BIT   SMB0CN.2 ; ARBITRATION LOST INDICATOR                            
+  00C3          +1   180     ACKRQ    BIT   SMB0CN.3 ; ACKNOWLEDGE REQUEST                                   
+  00C4          +1   181     STO      BIT   SMB0CN.4 ; STOP FLAG                                             
+  00C5          +1   182     STA      BIT   SMB0CN.5 ; START FLAG                                            
+  00C6          +1   183     TXMODE   BIT   SMB0CN.6 ; TRANSMIT MODE INDICATOR                               
+  00C7          +1   184     MASTER   BIT   SMB0CN.7 ; MASTER/SLAVE INDICATOR                                
+                +1   185     
+                +1   186     ; TMR2CN 0xC8 
+  00C8          +1   187     T2XCLK   BIT   TMR2CN.0 ; TIMER 2 EXTERNAL CLOCK SELECT                         
+  00CA          +1   188     TR2      BIT   TMR2CN.2 ; TIMER 2 ON/OFF CONTROL                                
+  00CB          +1   189     T2SPLIT  BIT   TMR2CN.3 ; TIMER 2 SPLIT MODE ENABLE                             
+  00CD          +1   190     TF2LEN   BIT   TMR2CN.5 ; TIMER 2 LOW BYTE INTERRUPT ENABLE                     
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     4
+
+  00CE          +1   191     TF2L     BIT   TMR2CN.6 ; TIMER 2 LOW BYTE OVERFLOW FLAG                        
+  00CF          +1   192     TF2H     BIT   TMR2CN.7 ; TIMER 2 HIGH BYTE OVERFLOW FLAG                       
+                +1   193     
+                +1   194     ; PSW 0xD0 
+  00D0          +1   195     P        BIT   PSW.0    ; ACCUMULATOR PARITY FLAG                               
+  00D1          +1   196     F1       BIT   PSW.1    ; USER FLAG 1                                           
+  00D2          +1   197     OV       BIT   PSW.2    ; OVERFLOW FLAG                                         
+  00D3          +1   198     RS0      BIT   PSW.3    ; REGISTER BANK SELECT 0                                
+  00D4          +1   199     RS1      BIT   PSW.4    ; REGISTER BANK SELECT 1                                
+  00D5          +1   200     F0       BIT   PSW.5    ; USER FLAG 0                                           
+  00D6          +1   201     AC       BIT   PSW.6    ; AUXILIARY CARRY FLAG                                  
+  00D7          +1   202     CY       BIT   PSW.7    ; CARRY FLAG                                            
+                +1   203     
+                +1   204     ; PCA0CN 0xD8H 
+  00D8          +1   205     CCF0     BIT   PCA0CN.0 ; PCA0 MODULE 0 CAPTURE/COMPARE FLAG                    
+  00D9          +1   206     CCF1     BIT   PCA0CN.1 ; PCA0 MODULE 1 CAPTURE/COMPARE FLAG                    
+  00DA          +1   207     CCF2     BIT   PCA0CN.2 ; PCA0 MODULE 2 CAPTURE/COMPARE FLAG                    
+  00DB          +1   208     CCF3     BIT   PCA0CN.3 ; PCA0 MODULE 3 CAPTURE/COMPARE FLAG                    
+  00DC          +1   209     CCF4     BIT   PCA0CN.4 ; PCA0 MODULE 4 CAPTURE/COMPARE FLAG                    
+  00DE          +1   210     CR       BIT   PCA0CN.6 ; PCA0 COUNTER RUN CONTROL                              
+  00DF          +1   211     CF       BIT   PCA0CN.7 ; PCA0 COUNTER OVERFLOW FLAG                            
+                +1   212     
+                +1   213     ; ADC0CN 0xE8H 
+  00E8          +1   214     AD0CM0   BIT   ADC0CN.0 ; ADC0 CONVERSION MODE SELECT 0                         
+  00E9          +1   215     AD0CM1   BIT   ADC0CN.1 ; ADC0 CONVERSION MODE SELECT 1                         
+  00EA          +1   216     AD0CM2   BIT   ADC0CN.2 ; ADC0 CONVERSION MODE SELECT 2                         
+  00EB          +1   217     AD0WINT  BIT   ADC0CN.3 ; ADC0 WINDOW COMPARE INTERRUPT FLAG                    
+  00EC          +1   218     AD0BUSY  BIT   ADC0CN.4 ; ADC0 BUSY FLAG                                        
+  00ED          +1   219     AD0INT   BIT   ADC0CN.5 ; ADC0 CONVERISION COMPLETE INTERRUPT FLAG              
+  00EE          +1   220     AD0TM    BIT   ADC0CN.6 ; ADC0 TRACK MODE                                       
+  00EF          +1   221     AD0EN    BIT   ADC0CN.7 ; ADC0 ENABLE                                           
+                +1   222     
+                +1   223     ; SPI0CN 0xF8H 
+  00FF          +1   224     SPIF     BIT   SPI0CN.7 ; SPI 0 INTERRUPT FLAG                                  
+  00FE          +1   225     WCOL     BIT   SPI0CN.6 ; SPI 0 WRITE COLLISION FLAG                            
+  00FD          +1   226     MODF     BIT   SPI0CN.5 ; SPI 0 MODE FAULT FLAG                                 
+  00FC          +1   227     RXOVRN   BIT   SPI0CN.4 ; SPI 0 RX OVERRUN FLAG                                 
+  00FB          +1   228     NSSMD1   BIT   SPI0CN.3 ; SPI 0 SLAVE SELECT MODE 1                             
+  00FA          +1   229     NSSMD0   BIT   SPI0CN.2 ; SPI 0 SLAVE SELECT MODE 0                             
+  00F9          +1   230     TXBMT    BIT   SPI0CN.1 ; SPI 0 TRANSMIT BUFFER EMPTY                           
+  00F8          +1   231     SPIEN    BIT   SPI0CN.0 ; SPI 0 SPI ENABLE                                      
+                     232     
+                     233     
+0000                 234                     ORG 0000H
+0000 020200          235                     LJMP MAIN
+                     236     
+000B                 237                     ORG 000BH
+000B 020489          238                     LJMP T0I0
+                     239     
+001B                 240                     ORG 001BH
+001B 0204B5          241                     LJMP T1I1
+                     242     
+0200                 243                     ORG 0200H
+0200 120716          244     MAIN:   LCALL Init_Device
+                     245           
+0203 C2A6            246             CLR P2.6                    ;Ö¸Ê¾µçÔ´£¬³£ÁÁ
+0205 C284            247                     CLR P0.4                    ;Ç¶¯ºìÍâ·¢¹â          
+0207 D285            248             SETB P0.5 
+                     249     
+0209 75BCF8          250             MOV ADC0CF,#0F8H    ;×ª»»Ê±ÖÓ±£³ÖÄ¬ÈÏ£¬AD0LJSTÈ¡1ÉèÖÃÎª×ó¶ÔÆë
+020C 75BA1F          251                     MOV AMX0N,#1FH      ;¸ºÊäÈëÈ¡ÎªGND
+020F 75BB13          252                     MOV AMX0P,#13H      ;ÕÊäÈëÈ¡ÎªP3.3,¼´DCÊäÈë
+                     253                                      
+0212 7840            254                     MOV     R0,#40H         ;R0Ö¸Ïò´æ½»Á÷ÐÅºÅµÄÊ×µØÖ· 
+0214 7A40            255                     MOV R2,#64              ;²ÉÑù´ÎÊ±ê¼ÇÎ»
+0216 7B02            256                     MOV R3,#2
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     5
+
+0218 7C06            257                     MOV R4,#6           ;ÓÒÒÆ±ê¼ÇÎ»
+                     258     
+021A 1205DC          259                     LCALL SMG1
+                     260     
+021D 7524FF          261                     MOV 24H,#0FFH
+0220 753800          262                     MOV 38H,#0
+0223 753900          263                     MOV 39H,#0
+0226 752A00          264                     MOV 2AH,#0
+0229 752B40          265                     MOV 2BH,#64
+                     266     
+022C 758911          267                 MOV TMOD,#11H
+022F 758C83          268                     MOV TH0,#131
+0232 758A63          269                     MOV TL0,#99
+0235 758D83          270                     MOV TH1,#131
+0238 758B63          271                     MOV TL1,#99
+                     272     
+023B D2A9            273                     SETB ET0
+023D D2AB            274                     SETB ET1
+023F D2AF            275                     SETB EA
+                     276     ;-----------------°´¼üS2¿ØÖÆ¿ªÊ¼²ÉÑù-------------------------
+0241 30A7FD          277     WAIT:   JNB P2.7,WAIT         ;KEY2ÊÇ·ñ°´ÏÂ       
+0244 1204E8          278             LCALL DEL10MS
+0247 20A7F7          279                     JB P2.7,WAIT
+024A C2A5            280                     CLR P2.5
+024C D2EF            281                     SETB AD0EN           ;ADÊ¹ÄÜ
+024E D2EC            282                     SETB AD0BUSY         ;Æô¶¯AD
+                     283     
+0250 30EDFD          284     AD1:    JNB AD0INT,AD1       ;AD×ª»»ÊÇ·ñÍê³É
+0253 85BD21          285             MOV 21H,0BDH         ;ºìÍâ¹âÊ±Ö±Á÷·ÖÁ¿´æÈë21Hµ¥Ôª
+0256 C2ED            286                     CLR AD0INT
+                     287     
+0258 C285            288                     CLR P0.5                         ;ÇÐ»»Îªºì¹â
+025A D284            289                     SETB P0.4      
+                     290     
+025C 1204F5          291                     LCALL DEL500MS       ;µÈ´10ms£¨¸ÃÊ±¼äÐè½øÒ»²½ÂÛÖ¤£©
+025F D2EC            292                     SETB AD0BUSY         ;Æô¶¯AD
+                     293     
+0261 30EDFD          294     AD2:    JNB AD0INT,AD2
+0264 85BD22          295             MOV 22H,0BDH         ;ºì¹âÊ±Ö±Á÷·ÖÁ¿´æÈë22Hµ¥Ôª
+0267 C2ED            296                     CLR AD0INT
+                     297     
+0269 75BB14          298                     MOV AMX0P,#14H       ;ÕÊäÈëÈ¡ÎªP3.4£¬¼´ACÊäÈë
+026C D28C            299                     SETB TR0             ;¿ªÊ¼¶¨Ê±
+                     300     
+026E EA              301     STOP1:  MOV A,R2
+026F 70FD            302             JNZ STOP1
+0271 C3              303                     CLR C
+0272 E523            304                     MOV A,23H
+0274 9524            305                     SUBB A,24H
+0276 F525            306                     MOV 25H,A            ;Ëã³öºì¹âµÄ½»Á÷·å·åÖµ£¬´æÈë25H
+                     307                     
+0278 752300          308                     MOV 23H,#0
+027B 7524FF          309                     MOV 24H,#0FFH
+                     310                                             
+027E C284            311                     CLR P0.4
+0280 D285            312                     SETB P0.5            ;ÇÐ»»ÎªºìÍâ¹â
+0282 D28C            313                     SETB TR0             ;¿ªÊ¼¶¨Ê±
+0284 7A40            314                     MOV R2,#64
+                     315     
+0286 EA              316     STOP2:  MOV A,R2
+0287 70FD            317             JNZ STOP2
+0289 C3              318                     CLR C
+028A E523            319                     MOV A,23H
+028C 9524            320                     SUBB A,24H
+028E F526            321                     MOV 26H,A            ;Ëã³öºìÍâ¹âµÄ½»Á÷·å·åÖµ£¬´æÈë26H
+0290 752300          322                     MOV 23H,#0
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     6
+
+                     323     
+0293 E522            324     CF1:    MOV A,22H
+0295 8521F0          325             MOV B,21H
+0298 84              326             DIV AB
+0299 6002            327             JZ A1                ;AÈôµÈÓÚÁãÔòµÚÒ»Ê½µÄ¸öÎ»Îª0£»
+029B F52F            328             MOV 2FH,A            ;46H´æµÚÒ»Ê½µÄ¸öÎ»¡£
+                     329     
+029D 85F02C          330     A1:     MOV 2CH,B
+02A0 740A            331             MOV A,#10
+02A2 A4              332             MUL AB
+02A3 F52D            333             MOV 2DH,A            ;44H´æµÍÎ»
+02A5 85F02E          334             MOV 2EH,B            ;45H´æ¸ßÎ»
+02A8 E52E            335                     MOV A,2EH
+02AA 2401            336                     ADD A,#1
+02AC F52E            337                     MOV 2EH,A
+02AE E52D            338                     MOV A,2DH
+                     339     
+02B0 9521            340     A2:     SUBB A,21H
+02B2 4003            341             JC A3                ;ÈôC=1,ÔòËµÃ÷ÓÐ½èÎ»£¬Ìøµ½A3£¬ÈôC=0£¬ÔòËµÃ÷Ã»ÓÐ½èÎ»¼ÌÐø¼õ
+02B4 09              342             INC R1               ;R1¼´ÎªÐ¡ÊµãºóÒ»Î»Ê×Ö¡£
+02B5 80F9            343             SJMP A2
+                     344     
+02B7 D52EF6          345     A3:     DJNZ 2EH,A2          ;Ã¿µ±Ïò¸ßÎ»ÓÐ½èÎ»Ê±¡£¸ßÎ»¼õÒ»£¬Í¬Ê±µÍÎ»ÔÙ´Î½øÐÐ¼õ·¨
+02BA 893A            346             MOV 3AH,R1
+02BC 8000            347             SJMP CF2
+                     348     
+02BE 7900            349     CF2:    MOV R1,#0
+02C0 E526            350             MOV A,26H
+02C2 8525F0          351             MOV B,25H
+02C5 84              352             DIV AB
+02C6 6002            353             JZ B1                ;AÈôµÈÓÚÁãÔòµÚÒ»Ê½µÄ¸öÎ»Îª0£»
+02C8 F53E            354             MOV 3EH,A            ;51H´æµÚÒ»Ê½µÄ¸öÎ»¡£
+                     355     
+02CA 85F03B          356     B1:     MOV 3BH,B
+02CD 740A            357             MOV A,#10
+02CF A4              358             MUL AB
+02D0 F53C            359             MOV 3CH,A            ;49H´æµÍÎ»
+02D2 85F03D          360             MOV 3DH,B            ;50H´æ¸ßÎ»
+02D5 E53D            361                     MOV A,3DH;
+02D7 2401            362                     ADD A,#1;
+02D9 F53D            363                     MOV 3DH,A
+02DB E53C            364                     MOV A,3CH;
+                     365     
+02DD 9525            366     B2:     SUBB A,25H
+02DF 4003            367             JC B3                ;ÈôC=1,ÔòËµÃ÷ÓÐ½èÎ»£¬Ìøµ½A3£¬ÈôC=0£¬ÔòËµÃ÷Ã»ÓÐ½èÎ»¼ÌÐø¼õ
+02E1 09              368             INC R1               ;R1¼´ÎªÐ¡ÊµãºóÒ»Î»Ê×Ö¡£
+02E2 80F9            369             SJMP B2
+                     370     
+02E4 D53DF6          371     B3:     DJNZ 3DH,B2          ;Ã¿µ±Ïò¸ßÎ»ÓÐ½èÎ»Ê±¡£¸ßÎ»¼õÒ»£¬Í¬Ê±µÍÎ»ÔÙ´Î½øÐÐ¼õ·¨
+02E7 893F            372             MOV 3FH,R1
+02E9 8000            373             SJMP MULTI
+                     374     
+02EB E52F            375     MULTI:  MOV A,2FH
+02ED 75F00A          376             MOV B,#10
+02F0 A4              377             MUL AB
+02F1 253A            378             ADD A,3AH
+02F3 F523            379             MOV 23H,A
+02F5 E53E            380             MOV A,3EH
+02F7 75F00A          381             MOV B,#10
+02FA A4              382             MUL AB
+02FB 253F            383             ADD A,3FH             ;µÚ¶þ¸öÖµ¶ÔÓ¦µÄÊ³ËÊ®
+02FD 8523F0          384             MOV B,23H 
+0300 A4              385             MUL AB                ;ÓÉÓÚÊµÑéµÄÏà¹ØÊ¾ÝÎÒÃÇ¿ÉÒÔ´ÖÂÔ¼ÆËãµÃµ½³Ë»Ò»¶¨²»»á´óÓÚ255
+0301 75F003          386                     MOV B,#3
+0304 A4              387                     MUL AB
+0305 75F00A          388                     MOV B,#10
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     7
+
+0308 84              389                     DIV AB                ;µÃµ½Ê®Î»ºÍ¸öÎ»£¬Ð¡ÊµãºóÒ»Î»ÉáÆú
+0309 75F00A          390                     MOV B,#10
+030C 84              391                     DIV AB
+030D F521            392                     MOV 21H,A             ;Ê®Î»´æÔÚ21H
+030F 85F022          393                     MOV 22H,B             ;¸öÎ»´æÔÚ22H
+0312 7460            394                 MOV A,#96             ;¶¨±êËã·¨
+0314 9521            395                     SUBB A,21H            ;µÃµ½°ÙÎ»ºÍÊ®Î»Ê¾Ý
+0316 F525            396             MOV 25H,A             ;´æÔÚ25H
+0318 7409            397                     MOV A,#9
+031A 9522            398                     SUBB A,22H            ;µÃµ½¸öÎ»Ê¾Ý
+031C F537            399                     MOV 37H,A             ;¸öÎ»Ê¾Ý¸ø37H
+031E 75F00A          400                 MOV B,#10
+0321 E525            401                     MOV A,25H
+0323 84              402                     DIV AB
+0324 F535            403                     MOV 35H,A             ;°ÙÎ»Ê¾Ý¸ø35H
+0326 85F036          404                     MOV 36H,B             ;Ê®Î»Ê¾Ý¸ø36H
+0329 D2A4            405                     SETB P2.4
+                     406     
+032B D28E            407                     SETB TR1              ;¿ªÊ¼¶¨Ê±
+                     408     
+032D C2A4            409                     CLR P2.4
+032F 7A40            410             MOV R2,#64
+                     411     
+0331 EA              412     STOP3:  MOV A,R2
+0332 70FD            413             JNZ STOP3
+0334 7840            414                     MOV R0,#40H
+0336 E538            415                     MOV A,38H
+                     416     
+0338 C3              417     C2:     CLR C
+0339 13              418             RRC A
+033A DCFC            419             DJNZ R4,C2
+033C F538            420             MOV 38H,A
+033E 7C06            421                     MOV R4,#6
+0340 E539            422             MOV A,39H
+                     423     
+0342 03              424     C3:     RR A
+0343 DCFD            425             DJNZ R4,C3
+0345 2538            426             ADD A,38H
+0347 752A00          427             MOV 2AH,#00
+034A 952A            428                     SUBB A,2AH                   ;Æ½¾ùÖµ¼õ40
+034C F52A            429                     MOV 2AH,A
+034E 7900            430             MOV R1,#0
+                     431     
+0350 7A40            432                     MOV R2,#64
+0352 E6              433     PJ:     MOV A,@R0                                         ;ÅÐ¾ö£¬Èç¹ûA´óÓÚµÈÓÚ2AH£¬ÔòÅÐÎª1£
+                             ¬·ñÔòÅÐÎª0
+0353 B52A07          434             CJNE A,2AH,PJ1
+0356 7601            435                     MOV @R0,#1
+0358 08              436                     INC R0
+0359 DAF7            437                     DJNZ R2,PJ
+035B 8010            438                     SJMP TB
+                     439     
+035D 4007            440     PJ1:    JC PJ2
+035F 7601            441             MOV @R0,#1
+0361 08              442                     INC R0
+0362 DAEE            443                     DJNZ R2,PJ
+0364 8007            444                     SJMP TB
+                     445     
+0366 7600            446     PJ2:    MOV @R0,#0
+0368 08              447             INC R0
+0369 DAE7            448                     DJNZ R2,PJ
+036B 8000            449                     SJMP TB
+                     450                     
+036D 7A40            451     TB:     MOV R2,#64
+036F 7840            452             MOV R0,#40H
+0371 7940            453                     MOV R1,#40H
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     8
+
+0373 E6              454             MOV A,@R0
+0374 700A            455                     JNZ TB2                           ;µÚÒ»¸öÊÎª1£¬Ìø×ªµ½TB2
+0376 08              456                     INC R0
+0377 1A              457                     DEC R2
+                     458     
+0378 E6              459     TB1:    MOV A,@R0                         ;´Ó0¿ªÊ¼£¬Óöµ½1Ê±¼ÇÏÂÌø±äÊ±¿Ì
+0379 700C            460                     JNZ TB3
+037B 08              461                     INC R0
+037C DAFA            462                     DJNZ R2,TB1
+037E 8011            463                     SJMP SJ
+                     464     
+0380 08              465     TB2:    INC R0
+0381 1A              466             DEC R2
+0382 E6              467                     MOV A,@R0
+0383 70FB            468                     JNZ TB2
+0385 80F1            469                     SJMP TB1
+                     470                     
+0387 E8              471     TB3:    MOV A,R0                           ;µÚÒ»¸ö0µ½1Ìø±äÊ±¿Ì´æÈëR1Ö¸ÏòÎ»ÖÃ
+0388 F7              472             MOV @R1,A
+0389 09              473                     INC R1
+038A 08              474                     INC R0
+                     475     
+038B E6              476     TB4:    MOV A,@R0
+038C 60EA            477                     JZ TB1
+038E 08              478                     INC R0
+038F DAFA            479                     DJNZ R2,TB4
+                     480     
+0391 C3              481     SJ:     CLR C 
+0392 7941            482             MOV R1,#41H
+0394 7850            483                     MOV R0,#50H
+0396 7A05            484                     MOV R2,#5
+0398 E7              485     SJ1:    MOV A,@R1
+0399 9540            486                     SUBB A,40H
+039B F6              487                     MOV @R0,A
+039C 08              488                     INC R0
+039D 09              489                     INC R1
+039E DAF8            490                     DJNZ R2,SJ1
+                     491     
+03A0 C3              492                     CLR C
+03A1 7942            493                     MOV R1,#42H
+03A3 7A04            494                     MOV R2,#4
+03A5 E7              495     SJ2:    MOV A,@R1
+03A6 9541            496             SUBB A,41H
+03A8 F6              497                     MOV @R0,A
+03A9 08              498                     INC R0
+03AA 09              499                     INC R1
+03AB DAF8            500                     DJNZ R2,SJ2
+                     501     
+03AD C3              502                     CLR C
+03AE 7943            503                     MOV R1,#43H
+03B0 7A03            504                     MOV R2,#3
+03B2 E7              505     SJ3:    MOV A,@R1
+03B3 9542            506             SUBB A,42H
+03B5 F6              507                     MOV @R0,A
+03B6 08              508                     INC R0
+03B7 09              509                     INC R1
+03B8 DAF8            510                     DJNZ R2,SJ3
+                     511     
+03BA C3              512                     CLR C
+03BB 7944            513                     MOV R1,#44H
+03BD 7A02            514                     MOV R2,#2
+03BF E7              515     SJ4:    MOV A,@R1
+03C0 9543            516             SUBB A,43H
+03C2 F6              517                     MOV @R0,A
+03C3 08              518                     INC R0
+03C4 09              519                     INC R1
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE     9
+
+03C5 DAF8            520                     DJNZ R2,SJ4
+                     521                     
+03C7 C3              522                     CLR C
+03C8 7945            523                     MOV R1,#45H
+03CA 7A01            524                     MOV R2,#1
+03CC E7              525     SJ5:    MOV A,@R1
+03CD 9544            526             SUBB A,44H
+03CF F6              527                     MOV @R0,A
+03D0 08              528                     INC R0
+03D1 09              529                     INC R1
+03D2 DAF8            530                     DJNZ R2,SJ5
+                     531     
+03D4 7850            532     SJ6:    MOV R0,#50H
+03D6 7940            533             MOV R1,#40H
+03D8 7A0F            534             MOV R2,#15
+03DA E6              535     D1:             MOV A,@R0
+03DB B40807          536                     CJNE A,#8,D2
+03DE F7              537                     MOV @R1,A
+03DF 08              538                     INC R0
+03E0 09              539                     INC R1
+03E1 DAF7            540                     DJNZ R2,D1
+03E3 801F            541                     SJMP SJA
+                     542     
+03E5 400A            543     D2:             JC D3
+03E7 B4100C          544             CJNE A,#16,D4
+03EA F7              545                     MOV @R1,A
+03EB 08              546                     INC R0
+03EC 09              547                     INC R1
+03ED DAEB            548                     DJNZ R2,D1
+03EF 8013            549                     SJMP SJA
+                     550           
+03F1 08              551     D3:     INC R0
+03F2 DAE6            552             DJNZ R2,D1
+03F4 800E            553                     SJMP SJA
+                     554     
+03F6 4005            555     D4:     JC D5
+03F8 08              556             INC R0
+03F9 DADF            557                     DJNZ R2,D1
+03FB 8007            558                     SJMP SJA
+                     559     
+03FD F7              560     D5:     MOV @R1,A
+03FE 08              561             INC R0
+03FF 09              562                     INC R1
+0400 DAD8            563                     DJNZ R2,D1
+0402 8000            564                     SJMP SJA
+                     565                                             
+0404 E540            566     SJA:    MOV A,40H
+0406 2541            567             ADD A,41H
+0408 2542            568                     ADD A,42H
+040A 2543            569                     ADD A,43H
+                     570     
+040C 7D0F            571             MOV R5,#0FH
+040E 7C00            572             MOV R4,#00H
+0410 7B00            573                     MOV R3,#00h
+0412 FA              574                     MOV R2,A
+0413 E4              575             CLR A
+0414 FF              576             MOV R7,A
+0415 FE              577                     MOV R6,A
+0416 75F010          578                     MOV B,#10H
+0419 C3              579     DIVA:   CLR C
+041A EC              580             MOV A,R4
+041B 33              581                     RLC A
+041C FC              582                     MOV R4,A
+041D ED              583                     MOV A,R5
+041E 33              584                     RLC A
+041F FD              585                     MOV R5,A
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    10
+
+0420 EE              586                     MOV A,R6
+0421 33              587                     RLC A
+0422 FE              588                     MOV R6,A
+0423 CF              589                     XCH A,R7
+0424 33              590                     RLC A
+0425 CF              591                     XCH A,R7
+0426 9A              592                     SUBB A,R2
+0427 F9              593                     MOV R1,A
+0428 EF              594                     MOV A,R7
+0429 9B              595                     SUBB A,R3
+042A 4004            596                     JC DIVB
+042C 0C              597                     INC R4
+042D FF              598                     MOV R7,A
+042E E9              599                     MOV A,R1
+042F FE              600                     MOV R6,A
+0430 D5F0E6          601     DIVB:   DJNZ B,DIVA
+0433 C2D2            602             CLR OV
+                     603     
+0435 EC              604                     MOV A,R4
+0436 B43700          605                     CJNE A,#55,SJB
+0439 4014            606     SJB:    JC ALARM1
+043B 75F064          607                     MOV B,#100
+043E 84              608                     DIV AB
+043F F532            609                     MOV 32H,A
+0441 E5F0            610                     MOV A,B
+0443 75F00A          611                     MOV B,#10
+0446 84              612                     DIV AB
+0447 F533            613                     MOV 33H,A
+0449 85F034          614                     MOV 34H,B
+                     615     
+044C 120508          616                     LCALL SMG       
+                     617     
+044F C2A3            618     ALARM1: CLR P2.3
+0451 7590FD          619             MOV P1,#0FDH
+0454 D2A1            620                     SETB P2.1
+0456 7479            621                     MOV A,#79H
+0458 C2A1            622                     CLR P2.1
+045A F590            623                     MOV P1,A
+045C D2A0            624                     SETB P2.0
+045E 1204DB          625                     LCALL DEL
+0461 C2A0            626                     CLR P2.0
+                     627             
+0463 7590FB          628                     MOV P1,#0FBH
+0466 D2A1            629                 SETB P2.1
+0468 7431            630                     MOV A,#31H
+046A C2A1            631                     CLR P2.1
+046C F590            632                     MOV P1,A
+046E D2A0            633                     SETB P2.0
+0470 1204DB          634                     LCALL DEL
+0473 C2A0            635                     CLR P2.0
+                     636     
+0475 7590F7          637                     MOV P1,#0F7H
+0478 D2A1            638                     SETB P2.1
+047A 7431            639                     MOV A,#31H
+047C C2A1            640                     CLR P2.1
+047E F590            641                     MOV P1,A
+0480 D2A0            642                     SETB P2.0
+0482 1204DB          643                     LCALL DEL
+0485 C2A0            644                     CLR P2.0
+0487 80C6            645                     SJMP ALARM1
+                     646     
+                     647     
+0489 D2EC            648     T0I0:   SETB AD0BUSY                ;¶¨Ê±Ê±¼äµ½£¬Æô¶¯AD
+048B 30EDFD          649     AD3:    JNB AD0INT,AD3              ;AD×ª»»ÊÇ·ñÍê³É                                        
+                                                                                            
+048E E5BD            650             MOV A,0BDH                  ;½«²Éµ½µÄÖµ´æÈëAÖÐ     
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    11
+
+0490 C2ED            651                     CLR AD0INT
+0492 C3              652                     CLR C
+0493 B52302          653                     CJNE A,23H,NEXT1                ;ÕÒ×î´óÖµ
+0496 F523            654                     MOV 23H,A
+0498 5002            655     NEXT1:  JNC NEXT2
+049A 8002            656             SJMP CP2
+049C F523            657     NEXT2:  MOV 23H,A                   ;Èôµ±´Î²ÉµÃµÄÊ´óÓÚµ±Ç°µÄ23H£¬Ìæ»»Ö®
+049E C3              658     CP2:    CLR C
+049F B52402          659             CJNE A,24H,NEXT3            ;ÕÒ×îÐ¡Öµ
+04A2 F524            660                     MOV 24H,A
+04A4 4002            661     NEXT3:  JC NEXT4
+04A6 8002            662             SJMP NEXT5
+04A8 F524            663     NEXT4:  MOV 24H,A                   ;Èôµ±´Î²ÉµÃµÄÊÐ¡ÓÚµ±Ç°µÄ24H£¬Ìæ»»Ö®
+04AA DA02            664     NEXT5:  DJNZ R2,AA
+04AC C28C            665                     CLR TR0
+04AE 758C83          666     AA:     MOV TH0,#131
+04B1 758A63          667             MOV TL0,#99
+04B4 32              668             RETI
+                     669                          
+04B5 DB1D            670     T1I1:   DJNZ R3,BB
+04B7 D2EC            671             SETB AD0BUSY                 ;¶¨Ê±Ê±¼äµ½£¬Æô¶¯AD
+04B9 30EDFD          672     AD4:    JNB AD0INT,AD4               ;AD×ª»»ÊÇ·ñÍê³É
+04BC A6BD            673             MOV @R0,0BDH                 ;½«²Éµ½µÄÖµ´æÈëR0Ö¸ÏòµÄµØÖ·ÖÐ
+04BE C2ED            674                     CLR AD0INT
+04C0 E538            675                     MOV A,38H
+04C2 26              676                     ADD A,@R0
+04C3 F538            677                     MOV 38H,A
+04C5 5006            678                     JNC C1
+04C7 E539            679                     MOV A,39H
+04C9 04              680                     INC A
+04CA F539            681                     MOV 39H,A
+04CC C3              682                     CLR C
+04CD 08              683     C1:             INC R0
+04CE 7B02            684                     MOV R3,#2
+04D0 DA02            685                     DJNZ R2,BB
+04D2 C28E            686                     CLR TR1
+04D4 758D83          687     BB:     MOV TH1,#131
+04D7 758B63          688             MOV TL1,#99
+04DA 32              689                     RETI 
+                     690     
+04DB 75291E          691     DEL:    MOV 29H,#30                       ;ÑÓÊ±10ms
+04DE 752842          692     DEL1:   MOV 28H,#66
+04E1 D528FD          693     DEL2:   DJNZ 28H,DEL2
+04E4 D529F7          694             DJNZ 29H,DEL1
+04E7 22              695             RET
+                     696     
+04E8 752996          697     DEL10MS:MOV 29H,#150                  ;ÑÓÊ±10ms
+04EB 752842          698     DEL21:  MOV 28H,#66
+04EE D528FD          699     DEL22:  DJNZ 28H,DEL22
+04F1 D529F7          700             DJNZ 29H,DEL21
+04F4 22              701             RET
+                     702     
+04F5 7529FF          703     DEL500MS:MOV 29H,#255                 ;ÑÓÊ±500ms
+04F8 752878          704     DEL31:   MOV 28H,#120
+04FB 75270F          705     DEL32:   MOV 27H,#15
+04FE D527FD          706     DEL33:   DJNZ 27H,DEL33
+0501 D528F7          707              DJNZ 28H,DEL32
+0504 D529F1          708              DJNZ 29H,DEL31
+0507 22              709              RET
+                     710     
+0508 9006E3          711     SMG:    MOV DPTR,#TABLE                            ;¸øDPTR¸³±íÏî³õÊ¼Öµ
+050B 75600A          712                     MOV 60H,#0AH
+050E 75610B          713                     MOV 61H,#0BH
+                     714     
+0511 C2A0            715     HERE:   CLR P2.0
+0513 C2A1            716             CLR P2.1
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    12
+
+                     717     
+0515 7590FE          718                     MOV P1,#0FEH                                    ;Ñ¡ÔñÊÂë¹Ü
+0518 D2A1            719             SETB P2.1
+                     720     
+051A E560            721             MOV A,60H
+051C 93              722             MOVC A,@A+DPTR                                  ;²é±í³ÌÐòÈë¿Ú
+051D C2A1            723                     CLR P2.1                                   
+051F F590            724                 MOV P1,A
+0521 D2A0            725                     SETB P2.0                                           ;½«AÖÐµÄÖµÊä³ö
+0523 1204DB          726                     LCALL DEL
+0526 C2A0            727                     CLR P2.0
+                     728     
+0528 7590FD          729                     MOV P1,#0FDH
+052B D2A1            730                     SETB P2.1
+                     731     
+052D E535            732                     MOV A,35H
+052F 93              733                     MOVC A,@A+DPTR
+                     734             
+0530 C2A1            735                     CLR P2.1
+0532 F590            736                     MOV P1,A
+0534 D2A0            737                     SETB P2.0
+0536 1204DB          738                     LCALL DEL
+0539 C2A0            739                     CLR P2.0
+                     740             
+053B 7590FB          741                     MOV P1,#0FBH
+053E D2A1            742                 SETB P2.1
+                     743     
+0540 E536            744                     MOV A,36H
+0542 93              745                     MOVC A,@A+DPTR   
+0543 2480            746                     ADD A,#80H
+0545 C2A1            747                     CLR P2.1
+0547 F590            748                     MOV P1,A
+0549 D2A0            749                     SETB P2.0
+054B 1204DB          750                     LCALL DEL
+054E C2A0            751                     CLR P2.0
+                     752     
+0550 7590F7          753                     MOV P1,#0F7H
+0553 D2A1            754                     SETB P2.1
+                     755     
+0555 E537            756                     MOV A,37H
+0557 93              757                     MOVC A,@A+DPTR
+0558 C2A1            758                     CLR P2.1
+055A F590            759                     MOV P1,A
+055C D2A0            760                     SETB P2.0
+055E 1204DB          761                     LCALL DEL
+0561 C2A0            762                     CLR P2.0
+                     763     
+0563 20A7AB          764             JB P2.7,HERE                       ;KEY2ÊÇ·ñ°´ÏÂ
+0566 1204E8          765             LCALL DEL10MS
+0569 1204E8          766                     LCALL DEL10MS
+056C 20A700          767                     JB P2.7,H0
+056F 1204E8          768     H0:     LCALL DEL10MS
+0572 1204E8          769             LCALL DEL10MS
+0575 30A799          770             JNB P2.7,HERE
+                     771                     
+0578 7590FE          772     HERE1:  MOV P1,#0FEH                                       ;Ñ¡ÔñÊÂë¹Ü
+057B D2A1            773             SETB P2.1
+                     774     
+057D E561            775             MOV A,61H
+057F 93              776             MOVC A,@A+DPTR                                     ;²é±í³ÌÐòÈë¿Ú
+0580 C2A1            777                     CLR P2.1                                   
+0582 F590            778                 MOV P1,A
+0584 D2A0            779                     SETB P2.0                                              ;½«AÖÐµÄÖµÊä³ö
+0586 1204DB          780                     LCALL DEL
+0589 C2A0            781                     CLR P2.0
+                     782             
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    13
+
+058B 7590FD          783                     MOV P1,#0FDH
+058E D2A1            784                     SETB P2.1
+                     785     
+0590 E532            786                     MOV A,32H
+0592 93              787                     MOVC A,@A+DPTR
+0593 C2A1            788                     CLR P2.1
+0595 F590            789                     MOV P1,A
+0597 D2A0            790                     SETB P2.0
+0599 1204DB          791                     LCALL DEL
+059C C2A0            792                     CLR P2.0
+                     793             
+059E 7590FB          794                     MOV P1,#0FBH
+05A1 D2A1            795                 SETB P2.1
+                     796     
+05A3 E533            797                     MOV A,33H
+05A5 93              798                     MOVC A,@A+DPTR 
+05A6 C2A1            799                     CLR P2.1
+05A8 F590            800                     MOV P1,A
+05AA D2A0            801                     SETB P2.0
+05AC 1204DB          802                     LCALL DEL
+05AF C2A0            803                     CLR P2.0
+                     804     
+05B1 7590F7          805                     MOV P1,#0F7H
+05B4 D2A1            806                     SETB P2.1
+                     807     
+05B6 E534            808                     MOV A,34H
+05B8 93              809                     MOVC A,@A+DPTR
+05B9 C2A1            810                     CLR P2.1
+05BB F590            811                     MOV P1,A
+05BD D2A0            812                     SETB P2.0
+05BF 1204DB          813                     LCALL DEL
+05C2 C2A0            814                     CLR P2.0
+                     815     
+05C4 20A7B1          816             JB P2.7,HERE1                       ;KEY2ÊÇ·ñ°´ÏÂ
+05C7 1204E8          817             LCALL DEL10MS
+05CA 1204E8          818                     LCALL DEL10MS
+05CD 20A700          819                     JB P2.7,H1
+05D0 1204E8          820     H1:             LCALL DEL10MS
+05D3 1204E8          821             LCALL DEL10MS
+05D6 30A79F          822                     JNB P2.7,HERE1
+                     823     
+05D9 020511          824                     LJMP HERE
+                     825     
+05DC 7FFF            826     SMG1:   MOV R7,#255
+05DE 7590F7          827             MOV P1,#0F7H                                       ;Ñ¡ÔñÊÂë¹Ü
+05E1 D2A1            828             SETB P2.1
+05E3 7476            829             MOV A,#76H                                                 
+05E5 C2A1            830                     CLR P2.1                                   
+05E7 F590            831                 MOV P1,A
+05E9 D2A0            832                     SETB P2.0                                              ;½«AÖÐµÄÖµÊä³ö
+05EB 1204DB          833                     LCALL DEL
+05EE C2A0            834                     CLR P2.0 
+05F0 1204F5          835                     LCALL DEL500MS
+05F3 1204F5          836                     LCALL DEL500MS
+                     837                           
+05F6 7590FB          838     HERE2:  MOV P1,#0FBH
+05F9 D2A1            839                     SETB P2.1
+                     840     
+05FB 7476            841                     MOV A,#76H      
+05FD C2A1            842                     CLR P2.1
+05FF F590            843                     MOV P1,A
+0601 D2A0            844                     SETB P2.0
+0603 1204DB          845                     LCALL DEL
+0606 C2A0            846                     CLR P2.0
+                     847             
+0608 7590F7          848                     MOV P1,#0F7H
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    14
+
+060B D2A1            849                 SETB P2.1
+060D 7479            850                     MOV A,#79H 
+060F C2A1            851                     CLR P2.1
+0611 F590            852                     MOV P1,A
+0613 D2A0            853                     SETB P2.0
+0615 1204DB          854                     LCALL DEL
+0618 C2A0            855                     CLR P2.0
+061A DFDA            856                     DJNZ R7,HERE2
+061C 7FFF            857                     MOV R7,#255
+                     858     
+061E 7590FD          859     HERE3:  MOV P1,#0FDH
+0621 D2A1            860                     SETB P2.1
+0623 7476            861                     MOV A,#76H
+0625 C2A1            862                     CLR P2.1
+0627 F590            863                     MOV P1,A
+0629 D2A0            864                     SETB P2.0
+062B 1204DB          865                     LCALL DEL
+062E C2A0            866                     CLR P2.0
+                     867             
+0630 7590FB          868                     MOV P1,#0FBH
+0633 D2A1            869                 SETB P2.1
+0635 7479            870                     MOV A,#79H
+0637 C2A1            871                     CLR P2.1
+0639 F590            872                     MOV P1,A
+063B D2A0            873                     SETB P2.0
+063D 1204DB          874                     LCALL DEL
+0640 C2A0            875                     CLR P2.0
+                     876     
+0642 7590F7          877                     MOV P1,#0F7H
+0645 D2A1            878                     SETB P2.1
+0647 7430            879                     MOV A,#30H
+0649 C2A1            880                     CLR P2.1
+064B F590            881                     MOV P1,A
+064D D2A0            882                     SETB P2.0
+064F 1204DB          883                     LCALL DEL
+0652 C2A0            884                     CLR P2.0
+0654 DFC8            885                     DJNZ R7,HERE3
+0656 7FFF            886                     MOV R7,#255
+                     887     
+0658 7590FD          888     HERE4:  MOV P1,#0FDH
+065B D2A1            889                     SETB P2.1
+065D 7476            890                     MOV A,#76H
+065F C2A1            891                     CLR P2.1
+0661 F590            892                     MOV P1,A
+0663 D2A0            893                     SETB P2.0
+0665 1204DB          894                     LCALL DEL
+0668 C2A0            895                     CLR P2.0
+                     896             
+066A 7590FB          897                     MOV P1,#0FBH
+066D D2A1            898                 SETB P2.1
+066F 7479            899                     MOV A,#79H
+0671 C2A1            900                     CLR P2.1
+0673 F590            901                     MOV P1,A
+0675 D2A0            902                     SETB P2.0
+0677 1204DB          903                     LCALL DEL
+067A C2A0            904                     CLR P2.0
+                     905     
+067C 7590F7          906                     MOV P1,#0F7H
+067F D2A1            907                     SETB P2.1
+0681 7436            908                     MOV A,#36H
+0683 C2A1            909                     CLR P2.1
+0685 F590            910                     MOV P1,A
+0687 D2A0            911                     SETB P2.0
+0689 1204DB          912                     LCALL DEL
+068C C2A0            913                     CLR P2.0
+068E DFC8            914                     DJNZ R7,HERE4
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    15
+
+0690 7FFF            915                     MOV R7,#255
+0692 7E02            916                     MOV R6,#2
+                     917     
+0694 7590FE          918     HERE5:  MOV P1,#0FEH                                    ;Ñ¡ÔñÊÂë¹Ü
+0697 D2A1            919             SETB P2.1
+0699 7476            920             MOV A,#76H
+069B C2A1            921                     CLR P2.1                                   
+069D F590            922                 MOV P1,A
+069F D2A0            923                     SETB P2.0                                           ;½«AÖÐµÄÖµÊä³ö
+06A1 1204DB          924                     LCALL DEL
+06A4 C2A0            925                     CLR P2.0
+                     926     
+06A6 7590FD          927                     MOV P1,#0FDH
+06A9 D2A1            928                     SETB P2.1
+06AB 7479            929                     MOV A,#79H
+06AD C2A1            930                     CLR P2.1
+06AF F590            931                     MOV P1,A
+06B1 D2A0            932                     SETB P2.0
+06B3 1204DB          933                     LCALL DEL
+06B6 C2A0            934                     CLR P2.0
+                     935             
+06B8 7590FB          936                     MOV P1,#0FBH
+06BB D2A1            937                 SETB P2.1
+06BD 7436            938                     MOV A,#36H
+06BF C2A1            939                     CLR P2.1
+06C1 F590            940                     MOV P1,A
+06C3 D2A0            941                     SETB P2.0
+06C5 1204DB          942                     LCALL DEL
+06C8 C2A0            943                     CLR P2.0
+                     944     
+06CA 7590F7          945                     MOV P1,#0F7H
+06CD D2A1            946                     SETB P2.1
+06CF 743F            947                     MOV A,#3FH
+06D1 C2A1            948                     CLR P2.1
+06D3 F590            949                     MOV P1,A
+06D5 D2A0            950                     SETB P2.0
+06D7 1204DB          951                     LCALL DEL
+06DA C2A0            952                     CLR P2.0
+06DC DFB6            953                     DJNZ R7,HERE5
+06DE 7FFF            954                     MOV R7,#255
+06E0 DEB2            955                     DJNZ R6,HERE5
+06E2 22              956                     RET
+                     957     
+06E3 3F065B4F        958     TABLE:  DB 3FH,06H,5BH,4FH,66H,6DH,7DH,07H,7FH          ;×ÖÐÎ´úÂë±í
+06E7 666D7D07                
+06EB 7F                      
+06EC 6F777C39        959                     DB 6FH,77H,7CH,39H,5EH,79H,71H
+06F0 5E7971                  
+                     960     
+                     961                                     
+06F3                 962     PCA_Init:
+06F3 53D9BF          963         anl  PCA0MD,    #0BFh
+06F6 75D900          964         mov  PCA0MD,    #000h
+06F9 22              965         ret
+                     966     
+06FA                 967     Timer_Init:
+06FA 758911          968         mov  TMOD,      #011h
+06FD 22              969         ret
+                     970     
+06FE                 971     Voltage_Reference_Init:
+06FE 75D10A          972         mov  REF0CN,    #00Ah
+0701 22              973         ret
+                     974     
+0702                 975     Port_IO_Init:
+                     976         ; P0.0  -  Unassigned,  Open-Drain, Digital
+                     977         ; P0.1  -  Unassigned,  Open-Drain, Digital
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    16
+
+                     978         ; P0.2  -  Unassigned,  Open-Drain, Digital
+                     979         ; P0.3  -  Unassigned,  Open-Drain, Digital
+                     980         ; P0.4  -  Unassigned,  Push-Pull,  Digital
+                     981         ; P0.5  -  Unassigned,  Push-Pull,  Digital
+                     982         ; P0.6  -  Unassigned,  Open-Drain, Digital
+                     983         ; P0.7  -  Unassigned,  Open-Drain, Digital
+                     984     
+                     985         ; P1.0  -  Unassigned,  Push-Pull,  Digital
+                     986         ; P1.1  -  Unassigned,  Push-Pull,  Digital
+                     987         ; P1.2  -  Unassigned,  Push-Pull,  Digital
+                     988         ; P1.3  -  Unassigned,  Push-Pull,  Digital
+                     989         ; P1.4  -  Unassigned,  Push-Pull,  Digital
+                     990         ; P1.5  -  Unassigned,  Push-Pull,  Digital
+                     991         ; P1.6  -  Unassigned,  Push-Pull,  Digital
+                     992         ; P1.7  -  Unassigned,  Push-Pull,  Digital
+                     993         ; P2.0  -  Unassigned,  Push-Pull,  Digital
+                     994         ; P2.1  -  Unassigned,  Push-Pull,  Digital
+                     995         ; P2.2  -  Unassigned,  Open-Drain, Digital
+                     996         ; P2.3  -  Unassigned,  Push-Pull,  Digital
+                     997     
+0702 75F4E7          998         mov  P3MDIN,    #0E7h
+0705 75A430          999         mov  P0MDOUT,   #030h
+0708 75A5FF         1000         mov  P1MDOUT,   #0FFh
+070B 75A6FB         1001         mov  P2MDOUT,   #0FBh
+070E 75E240         1002         mov  XBR1,      #040h
+0711 22             1003         ret
+                    1004     
+0712                1005     Oscillator_Init:
+0712 75B282         1006         mov  OSCICN,    #082h
+0715 22             1007         ret
+                    1008     
+                    1009     ; Initialization function for device,
+                    1010     ; Call Init_Device from your main program
+0716                1011     Init_Device:
+0716 1206F3         1012         lcall PCA_Init
+0719 1206FA         1013         lcall Timer_Init
+071C 1206FE         1014         lcall Voltage_Reference_Init
+071F 120702         1015         lcall Port_IO_Init
+0722 120712         1016         lcall Oscillator_Init
+0725 22             1017         ret
+                    1018     
+                    1019     end
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    17
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E                 T Y P E  V A L U E   ATTRIBUTES
+
+A1 . . . . . . . . . .  C ADDR   029DH   A   
+A2 . . . . . . . . . .  C ADDR   02B0H   A   
+A3 . . . . . . . . . .  C ADDR   02B7H   A   
+AA . . . . . . . . . .  C ADDR   04AEH   A   
+AC . . . . . . . . . .  B ADDR   00D0H.6 A   
+ACC. . . . . . . . . .  D ADDR   00E0H   A   
+ACK. . . . . . . . . .  B ADDR   00C0H.1 A   
+ACKRQ. . . . . . . . .  B ADDR   00C0H.3 A   
+AD0BUSY. . . . . . . .  B ADDR   00E8H.4 A   
+AD0CM0 . . . . . . . .  B ADDR   00E8H.0 A   
+AD0CM1 . . . . . . . .  B ADDR   00E8H.1 A   
+AD0CM2 . . . . . . . .  B ADDR   00E8H.2 A   
+AD0EN. . . . . . . . .  B ADDR   00E8H.7 A   
+AD0INT . . . . . . . .  B ADDR   00E8H.5 A   
+AD0TM. . . . . . . . .  B ADDR   00E8H.6 A   
+AD0WINT. . . . . . . .  B ADDR   00E8H.3 A   
+AD1. . . . . . . . . .  C ADDR   0250H   A   
+AD2. . . . . . . . . .  C ADDR   0261H   A   
+AD3. . . . . . . . . .  C ADDR   048BH   A   
+AD4. . . . . . . . . .  C ADDR   04B9H   A   
+ADC0CF . . . . . . . .  D ADDR   00BCH   A   
+ADC0CN . . . . . . . .  D ADDR   00E8H   A   
+ADC0GTH. . . . . . . .  D ADDR   00C4H   A   
+ADC0GTL. . . . . . . .  D ADDR   00C3H   A   
+ADC0H. . . . . . . . .  D ADDR   00BEH   A   
+ADC0L. . . . . . . . .  D ADDR   00BDH   A   
+ADC0LTH. . . . . . . .  D ADDR   00C6H   A   
+ADC0LTL. . . . . . . .  D ADDR   00C5H   A   
+ALARM1 . . . . . . . .  C ADDR   044FH   A   
+AMX0N. . . . . . . . .  D ADDR   00BAH   A   
+AMX0P. . . . . . . . .  D ADDR   00BBH   A   
+ARBLOST. . . . . . . .  B ADDR   00C0H.2 A   
+B. . . . . . . . . . .  D ADDR   00F0H   A   
+B1 . . . . . . . . . .  C ADDR   02CAH   A   
+B2 . . . . . . . . . .  C ADDR   02DDH   A   
+B3 . . . . . . . . . .  C ADDR   02E4H   A   
+BB . . . . . . . . . .  C ADDR   04D4H   A   
+C1 . . . . . . . . . .  C ADDR   04CDH   A   
+C2 . . . . . . . . . .  C ADDR   0338H   A   
+C3 . . . . . . . . . .  C ADDR   0342H   A   
+CCF0 . . . . . . . . .  B ADDR   00D8H.0 A   
+CCF1 . . . . . . . . .  B ADDR   00D8H.1 A   
+CCF2 . . . . . . . . .  B ADDR   00D8H.2 A   
+CCF3 . . . . . . . . .  B ADDR   00D8H.3 A   
+CCF4 . . . . . . . . .  B ADDR   00D8H.4 A   
+CF . . . . . . . . . .  B ADDR   00D8H.7 A   
+CF1. . . . . . . . . .  C ADDR   0293H   A   
+CF2. . . . . . . . . .  C ADDR   02BEH   A   
+CKCON. . . . . . . . .  D ADDR   008EH   A   
+CLKSEL . . . . . . . .  D ADDR   00A9H   A   
+CP2. . . . . . . . . .  C ADDR   049EH   A   
+CPT0CN . . . . . . . .  D ADDR   009BH   A   
+CPT0MD . . . . . . . .  D ADDR   009DH   A   
+CPT0MX . . . . . . . .  D ADDR   009FH   A   
+CPT1CN . . . . . . . .  D ADDR   009AH   A   
+CPT1MD . . . . . . . .  D ADDR   009CH   A   
+CPT1MX . . . . . . . .  D ADDR   009EH   A   
+CR . . . . . . . . . .  B ADDR   00D8H.6 A   
+CY . . . . . . . . . .  B ADDR   00D0H.7 A   
+D1 . . . . . . . . . .  C ADDR   03DAH   A   
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    18
+
+D2 . . . . . . . . . .  C ADDR   03E5H   A   
+D3 . . . . . . . . . .  C ADDR   03F1H   A   
+D4 . . . . . . . . . .  C ADDR   03F6H   A   
+D5 . . . . . . . . . .  C ADDR   03FDH   A   
+DEL. . . . . . . . . .  C ADDR   04DBH   A   
+DEL1 . . . . . . . . .  C ADDR   04DEH   A   
+DEL10MS. . . . . . . .  C ADDR   04E8H   A   
+DEL2 . . . . . . . . .  C ADDR   04E1H   A   
+DEL21. . . . . . . . .  C ADDR   04EBH   A   
+DEL22. . . . . . . . .  C ADDR   04EEH   A   
+DEL31. . . . . . . . .  C ADDR   04F8H   A   
+DEL32. . . . . . . . .  C ADDR   04FBH   A   
+DEL33. . . . . . . . .  C ADDR   04FEH   A   
+DEL500MS . . . . . . .  C ADDR   04F5H   A   
+DIVA . . . . . . . . .  C ADDR   0419H   A   
+DIVB . . . . . . . . .  C ADDR   0430H   A   
+DPH. . . . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . . . .  D ADDR   0082H   A   
+EA . . . . . . . . . .  B ADDR   00A8H.7 A   
+EIE1 . . . . . . . . .  D ADDR   00E6H   A   
+EIP1 . . . . . . . . .  D ADDR   00F6H   A   
+EMI0CN . . . . . . . .  D ADDR   00AAH   A   
+ES0. . . . . . . . . .  B ADDR   00A8H.4 A   
+ESPI0. . . . . . . . .  B ADDR   00A8H.6 A   
+ET0. . . . . . . . . .  B ADDR   00A8H.1 A   
+ET1. . . . . . . . . .  B ADDR   00A8H.3 A   
+ET2. . . . . . . . . .  B ADDR   00A8H.5 A   
+EX0. . . . . . . . . .  B ADDR   00A8H.0 A   
+EX1. . . . . . . . . .  B ADDR   00A8H.2 A   
+F0 . . . . . . . . . .  B ADDR   00D0H.5 A   
+F1 . . . . . . . . . .  B ADDR   00D0H.1 A   
+FLACL. . . . . . . . .  D ADDR   00B5H   A   
+FLKEY. . . . . . . . .  D ADDR   00B7H   A   
+FLSCL. . . . . . . . .  D ADDR   00B6H   A   
+H0 . . . . . . . . . .  C ADDR   056FH   A   
+H1 . . . . . . . . . .  C ADDR   05D0H   A   
+HERE . . . . . . . . .  C ADDR   0511H   A   
+HERE1. . . . . . . . .  C ADDR   0578H   A   
+HERE2. . . . . . . . .  C ADDR   05F6H   A   
+HERE3. . . . . . . . .  C ADDR   061EH   A   
+HERE4. . . . . . . . .  C ADDR   0658H   A   
+HERE5. . . . . . . . .  C ADDR   0694H   A   
+IE . . . . . . . . . .  D ADDR   00A8H   A   
+IE0. . . . . . . . . .  B ADDR   0088H.1 A   
+IE1. . . . . . . . . .  B ADDR   0088H.3 A   
+INIT_DEVICE. . . . . .  C ADDR   0716H   A   
+IP . . . . . . . . . .  D ADDR   00B8H   A   
+IT0. . . . . . . . . .  B ADDR   0088H.0 A   
+IT01CF . . . . . . . .  D ADDR   00E4H   A   
+IT1. . . . . . . . . .  B ADDR   0088H.2 A   
+MAIN . . . . . . . . .  C ADDR   0200H   A   
+MASTER . . . . . . . .  B ADDR   00C0H.7 A   
+MCE0 . . . . . . . . .  B ADDR   0098H.5 A   
+MODF . . . . . . . . .  B ADDR   00F8H.5 A   
+MULTI. . . . . . . . .  C ADDR   02EBH   A   
+NEXT1. . . . . . . . .  C ADDR   0498H   A   
+NEXT2. . . . . . . . .  C ADDR   049CH   A   
+NEXT3. . . . . . . . .  C ADDR   04A4H   A   
+NEXT4. . . . . . . . .  C ADDR   04A8H   A   
+NEXT5. . . . . . . . .  C ADDR   04AAH   A   
+NSSMD0 . . . . . . . .  B ADDR   00F8H.2 A   
+NSSMD1 . . . . . . . .  B ADDR   00F8H.3 A   
+OSCICL . . . . . . . .  D ADDR   00B3H   A   
+OSCICN . . . . . . . .  D ADDR   00B2H   A   
+OSCILLATOR_INIT. . . .  C ADDR   0712H   A   
+OSCXCN . . . . . . . .  D ADDR   00B1H   A   
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    19
+
+OV . . . . . . . . . .  B ADDR   00D0H.2 A   
+P. . . . . . . . . . .  B ADDR   00D0H.0 A   
+P0 . . . . . . . . . .  D ADDR   0080H   A   
+P0MDIN . . . . . . . .  D ADDR   00F1H   A   
+P0MDOUT. . . . . . . .  D ADDR   00A4H   A   
+P0SKIP . . . . . . . .  D ADDR   00D4H   A   
+P1 . . . . . . . . . .  D ADDR   0090H   A   
+P1MDIN . . . . . . . .  D ADDR   00F2H   A   
+P1MDOUT. . . . . . . .  D ADDR   00A5H   A   
+P1SKIP . . . . . . . .  D ADDR   00D5H   A   
+P2 . . . . . . . . . .  D ADDR   00A0H   A   
+P2MDIN . . . . . . . .  D ADDR   00F3H   A   
+P2MDOUT. . . . . . . .  D ADDR   00A6H   A   
+P2SKIP . . . . . . . .  D ADDR   00D6H   A   
+P3 . . . . . . . . . .  D ADDR   00B0H   A   
+P3MDIN . . . . . . . .  D ADDR   00F4H   A   
+P3MDOUT. . . . . . . .  D ADDR   00A7H   A   
+PCA0CN . . . . . . . .  D ADDR   00D8H   A   
+PCA0CPH0 . . . . . . .  D ADDR   00FCH   A   
+PCA0CPH1 . . . . . . .  D ADDR   00EAH   A   
+PCA0CPH2 . . . . . . .  D ADDR   00ECH   A   
+PCA0CPH3 . . . . . . .  D ADDR   00EEH   A   
+PCA0CPH4 . . . . . . .  D ADDR   00FEH   A   
+PCA0CPL0 . . . . . . .  D ADDR   00FBH   A   
+PCA0CPL1 . . . . . . .  D ADDR   00E9H   A   
+PCA0CPL2 . . . . . . .  D ADDR   00EBH   A   
+PCA0CPL3 . . . . . . .  D ADDR   00EDH   A   
+PCA0CPL4 . . . . . . .  D ADDR   00FDH   A   
+PCA0CPM0 . . . . . . .  D ADDR   00DAH   A   
+PCA0CPM1 . . . . . . .  D ADDR   00DBH   A   
+PCA0CPM2 . . . . . . .  D ADDR   00DCH   A   
+PCA0CPM3 . . . . . . .  D ADDR   00DDH   A   
+PCA0CPM4 . . . . . . .  D ADDR   00DEH   A   
+PCA0H. . . . . . . . .  D ADDR   00FAH   A   
+PCA0L. . . . . . . . .  D ADDR   00F9H   A   
+PCA0MD . . . . . . . .  D ADDR   00D9H   A   
+PCA_INIT . . . . . . .  C ADDR   06F3H   A   
+PCON . . . . . . . . .  D ADDR   0087H   A   
+PJ . . . . . . . . . .  C ADDR   0352H   A   
+PJ1. . . . . . . . . .  C ADDR   035DH   A   
+PJ2. . . . . . . . . .  C ADDR   0366H   A   
+PORT_IO_INIT . . . . .  C ADDR   0702H   A   
+PS0. . . . . . . . . .  B ADDR   00B8H.4 A   
+PSCTL. . . . . . . . .  D ADDR   008FH   A   
+PSPI0. . . . . . . . .  B ADDR   00B8H.6 A   
+PSW. . . . . . . . . .  D ADDR   00D0H   A   
+PT0. . . . . . . . . .  B ADDR   00B8H.1 A   
+PT1. . . . . . . . . .  B ADDR   00B8H.3 A   
+PT2. . . . . . . . . .  B ADDR   00B8H.5 A   
+PX0. . . . . . . . . .  B ADDR   00B8H.0 A   
+PX1. . . . . . . . . .  B ADDR   00B8H.2 A   
+RB80 . . . . . . . . .  B ADDR   0098H.2 A   
+REF0CN . . . . . . . .  D ADDR   00D1H   A   
+REN0 . . . . . . . . .  B ADDR   0098H.4 A   
+RI0. . . . . . . . . .  B ADDR   0098H.0 A   
+RS0. . . . . . . . . .  B ADDR   00D0H.3 A   
+RS1. . . . . . . . . .  B ADDR   00D0H.4 A   
+RSTSRC . . . . . . . .  D ADDR   00EFH   A   
+RXOVRN . . . . . . . .  B ADDR   00F8H.4 A   
+S0MODE . . . . . . . .  B ADDR   0098H.7 A   
+SBUF0. . . . . . . . .  D ADDR   0099H   A   
+SCON0. . . . . . . . .  D ADDR   0098H   A   
+SI . . . . . . . . . .  B ADDR   00C0H.0 A   
+SJ . . . . . . . . . .  C ADDR   0391H   A   
+SJ1. . . . . . . . . .  C ADDR   0398H   A   
+SJ2. . . . . . . . . .  C ADDR   03A5H   A   
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    20
+
+SJ3. . . . . . . . . .  C ADDR   03B2H   A   
+SJ4. . . . . . . . . .  C ADDR   03BFH   A   
+SJ5. . . . . . . . . .  C ADDR   03CCH   A   
+SJ6. . . . . . . . . .  C ADDR   03D4H   A   
+SJA. . . . . . . . . .  C ADDR   0404H   A   
+SJB. . . . . . . . . .  C ADDR   0439H   A   
+SMB0CF . . . . . . . .  D ADDR   00C1H   A   
+SMB0CN . . . . . . . .  D ADDR   00C0H   A   
+SMB0DAT. . . . . . . .  D ADDR   00C2H   A   
+SMG. . . . . . . . . .  C ADDR   0508H   A   
+SMG1 . . . . . . . . .  C ADDR   05DCH   A   
+SP . . . . . . . . . .  D ADDR   0081H   A   
+SPI0CFG. . . . . . . .  D ADDR   00A1H   A   
+SPI0CKR. . . . . . . .  D ADDR   00A2H   A   
+SPI0CN . . . . . . . .  D ADDR   00F8H   A   
+SPI0DAT. . . . . . . .  D ADDR   00A3H   A   
+SPIEN. . . . . . . . .  B ADDR   00F8H.0 A   
+SPIF . . . . . . . . .  B ADDR   00F8H.7 A   
+STA. . . . . . . . . .  B ADDR   00C0H.5 A   
+STO. . . . . . . . . .  B ADDR   00C0H.4 A   
+STOP1. . . . . . . . .  C ADDR   026EH   A   
+STOP2. . . . . . . . .  C ADDR   0286H   A   
+STOP3. . . . . . . . .  C ADDR   0331H   A   
+T0I0 . . . . . . . . .  C ADDR   0489H   A   
+T1I1 . . . . . . . . .  C ADDR   04B5H   A   
+T2SPLIT. . . . . . . .  B ADDR   00C8H.3 A   
+T2XCLK . . . . . . . .  B ADDR   00C8H.0 A   
+TABLE. . . . . . . . .  C ADDR   06E3H   A   
+TB . . . . . . . . . .  C ADDR   036DH   A   
+TB1. . . . . . . . . .  C ADDR   0378H   A   
+TB2. . . . . . . . . .  C ADDR   0380H   A   
+TB3. . . . . . . . . .  C ADDR   0387H   A   
+TB4. . . . . . . . . .  C ADDR   038BH   A   
+TB80 . . . . . . . . .  B ADDR   0098H.3 A   
+TCON . . . . . . . . .  D ADDR   0088H   A   
+TF0. . . . . . . . . .  B ADDR   0088H.5 A   
+TF1. . . . . . . . . .  B ADDR   0088H.7 A   
+TF2H . . . . . . . . .  B ADDR   00C8H.7 A   
+TF2L . . . . . . . . .  B ADDR   00C8H.6 A   
+TF2LEN . . . . . . . .  B ADDR   00C8H.5 A   
+TH0. . . . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . . . .  D ADDR   008DH   A   
+TI0. . . . . . . . . .  B ADDR   0098H.1 A   
+TIMER_INIT . . . . . .  C ADDR   06FAH   A   
+TL0. . . . . . . . . .  D ADDR   008AH   A   
+TL1. . . . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . . . .  D ADDR   0089H   A   
+TMR2CN . . . . . . . .  D ADDR   00C8H   A   
+TMR2H. . . . . . . . .  D ADDR   00CDH   A   
+TMR2L. . . . . . . . .  D ADDR   00CCH   A   
+TMR2RLH. . . . . . . .  D ADDR   00CBH   A   
+TMR2RLL. . . . . . . .  D ADDR   00CAH   A   
+TMR3CN . . . . . . . .  D ADDR   0091H   A   
+TMR3H. . . . . . . . .  D ADDR   0095H   A   
+TMR3L. . . . . . . . .  D ADDR   0094H   A   
+TMR3RLH. . . . . . . .  D ADDR   0093H   A   
+TMR3RLL. . . . . . . .  D ADDR   0092H   A   
+TR0. . . . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . . . .  B ADDR   0088H.6 A   
+TR2. . . . . . . . . .  B ADDR   00C8H.2 A   
+TXBMT. . . . . . . . .  B ADDR   00F8H.1 A   
+TXMODE . . . . . . . .  B ADDR   00C0H.6 A   
+VDM0CN . . . . . . . .  D ADDR   00FFH   A   
+VOLTAGE_REFERENCE_INIT  C ADDR   06FEH   A   
+WAIT . . . . . . . . .  C ADDR   0241H   A   
+WCOL . . . . . . . . .  B ADDR   00F8H.6 A   
+A51 MACRO ASSEMBLER  XYMB0                                                                07/08/2015 20:58:27 PAGE    21
+
+XBR0 . . . . . . . . .  D ADDR   00E1H   A   
+XBR1 . . . . . . . . .  D ADDR   00E2H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
